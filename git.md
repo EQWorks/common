@@ -32,6 +32,7 @@ GOOD:
     - Through **merge commit** (merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge)) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
     - Through **rebase merge** -- the relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
 - Either mark the issue(s) that the request fixes (`fixes #123`, `closes #321`), or label the request itself when there are no relevant issues -- not both.
+- Prefix request title with `[G2M]` to signal for "Good to Merge", gently broadcast for attention in relevant Slack channel(s). Change request title prefix to `[WIP]` when it needs to be worked a bit more.
 
 BAD:
 - Lengthy code changes -- this often requires some forward thinking on how to structure the changes (TODO: to be discussed in another section).
@@ -46,6 +47,8 @@ GOOD:
 - Actively self-review and monitor your own pull/merge requests -- be on the lookout for potential conflicts after other requests have been merged.
 - When giving code change requests, think twice before you submit -- be constructive, and be ready to defend your reasons.
 - If the code change suggestion does not warrant definitive reasoning, but would still be constructive in your opinion, make it as a non-blocking comment.
+- Where relevant, go through the changes in deploy preview or in your local environment to check for UI/UX flow as well as bugs.
+- Prioritize on reviewing those that marked as bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that it is a well-followed convention in the given project.
 
 BAD:
 - Cast approval without actually reviewing it -- this is obvious, as code reviews should be for quality control, **not** for bureaucratic control.

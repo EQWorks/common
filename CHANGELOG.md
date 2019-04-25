@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - [`git.md`](git.md) `On Reviewing` section.
-- [`CHANGELOG.md`](CHANGELOG.md)
+- [`CHANGELOG.md`](CHANGELOG.md).
+- [`git.md`](git.md) added `[G2M]` prefix as a GOOD practice under `On Pull/Merge Requests` section.
 
 ### Fixed
 - [`git.md`](git.md) grammar and vocabulary fixes.
