@@ -10,7 +10,7 @@ This consistency allows for an easier time on end-to-end communication, developm
 
 ## Respect Common/Community Standard
 
-Try to apply the commonly agreed naming standard by the given language/stack/framework's community.
+Try to apply the commonly agreed naming standard by the given language/stack/framework's community. This saves us time from debating on coding styles and allows for an easier onboarding experience.
 
 Some are more enforcing than others, such as Golang [attaches package interface visibility to naming rules](https://tour.golang.org/basics/3), while [Python's PEP8](https://www.python.org/dev/peps/pep-0008/#naming-conventions) and [Effective Go](https://golang.org/doc/effective_go.html#names) has recommended, but non-enforcing conventions.
 
@@ -18,7 +18,7 @@ Then there is JavaScript, [with](https://google.github.io/styleguide/jsguide.htm
 
 ## Respect Existing Conventions
 
-Respect existing conventions applied in existing projects. Gradually revise upon common agreement between project maintainers.
+Respect existing conventions applied in existing projects. Gradually revise upon common agreement between project maintainers, ideally toward an established common/community standard.
 
 ## Scope Dependent Naming
 
