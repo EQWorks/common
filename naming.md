@@ -24,7 +24,7 @@ Respect existing conventions applied in existing projects. Gradually revise upon
 
 Prefer **comprehensive** and **concise** names for `classes`, `functions/methods`, and shared `variables` (such as constants, globals).
 
-Prefer **short** but **relevant** names for locally scoped `variables` and `functions` provided no conflict within the same scope, and the scope does not entail lengthy code. This is borrowed from real-life convention of signing documents -- often there is only one signature required per-page (or even per-document), but any "local" (significant fields) acknoledgements are in the form of initials.
+Prefer **short** but **relevant** names for locally scoped `variables` and `functions` provided no conflict within the same scope, and the scope does not entail lengthy code. This is borrowed from the real-life convention of signing documents -- often there is only one signature required per-page (or even per-document), but any "local" (significant fields) acknowledgments are in the form of initials.
 
 Python example:
 
