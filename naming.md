@@ -146,6 +146,6 @@ Python example:
 
 ```python
 # pre-aggregation-pipeline.py
-class PreAggregationPipeline:
+def pre_aggregation_pipeline():
     pass
 ```
