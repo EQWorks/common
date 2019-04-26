@@ -8,6 +8,65 @@ This sometimes would go against common/community (non-enforcing) conventions. Fo
 
 This consistency allows for an easier time on end-to-end communication, development and debugging. It makes code less error-prone, as no explicit case conversion are involved in the transport and business logic. And as a side benefit, all participants are naturally familiar with the data structure being passed over the wire.
 
+Example:
+
+```javascript
+// some Node.js API server relaying PostgreSQL
+router.get('/user/:first_name', (req, res, next) => {
+  // GOOD -- direct extraction, no transformation
+  const { first_name } = req.query
+  // BAD -- wasteful transformation for "good" convention
+  const firstName = req.query.first_name
+  db.query({
+    text: `
+      SELECT
+        id,
+        first_name,
+        last_name,
+        role
+      FROM user_table
+      WHERE first_name = $1;
+    `,
+    values: [first_name],
+  }).then(({ rows: [person] }) => {
+    // GOOD -- direct relay, no transformation
+    // data structure can be easily understood through ^SQL
+    // as the "single origin of truth".
+    return res.status(200).json(person)
+
+    // BAD -- wasteful transformation for "good" convention
+    // requires additional efforts to know what to expect from
+    // this API endpoint.
+    return res.status(200).json({
+      id: person.id,
+      firstName: person.first_name,
+      // easily overlooked typo that cannot be caught at runtime
+      lastNmae: person.last_name,
+      role: person.role,
+    })
+  }).catch(next)
+})
+
+// cleaned up version with only GOOD parts
+router.get('/user/:first_name', (req, res, next) => {
+  const { first_name } = req.query
+  db.query({
+    text: `
+      SELECT
+        id,
+        first_name,
+        last_name,
+        role
+      FROM user_table
+      WHERE first_name = $1;
+    `,
+    values: [first_name],
+  }).then(({ rows: [person] }) => {
+    return res.status(200).json(person)
+  }).catch(next)
+})
+```
+
 ## Respect Common/Community Standard
 
 Try to apply the commonly agreed naming standard by the given language/stack/framework's community. This saves us time from debating on coding styles and allows for an easier onboarding experience.
@@ -93,7 +152,6 @@ JavaScript example:
 function WonderfulPerson(data) {
   this.firstName = data.firstName
   this.lastName = data.lastName
-  this.person_id = data.person_id // see #End-to-end Consistency above
 }
 
 // methods/functions
