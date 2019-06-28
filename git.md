@@ -58,6 +58,33 @@ $ git branch
   master
 ```
 
+## On Tags
+
+Try to maintain a tagging practice that suits the project's release cycle. Adopt [semantic versioning](https://semver.org/) wherever possible.
+
+```bash
+$ git tag
+v1.2.10
+v1.2.11
+v1.2.11-pre0
+v1.2.12
+v1.2.7
+v1.2.8
+v1.2.9
+```
+
+This would allow for some nice tricks to automate tedious tasks, such as listing out commits between tags and/or branch HEADs:
+
+```bash
+$ git log v1.2.12..master --pretty=oneline --abbrev-commit --author=runzhou.li
+c5f91ec Builder/Hub - prevent actions before WL is chosen
+7461541 Hub - allow multiple (composite) `primary_key`s
+e323208 Hub - deprecate `primary` for `primary_key`
+326cc64 Hub - bug fix of ISO date detected as IP, also:
+```
+
+This can be very handy for generating (semi-)automated release notes.
+
 ## On Pull/Merge Requests
 
 Try to maintain a good length and depth of the code changes within each request, make it digestible within 30 minutes or less.

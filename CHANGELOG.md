@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - [`git.md`](git.md) more on commit practices and revisions, now similar to [`naming.md`](naming.md).
 
+### Added
+- [`git.md`](git.md) `On Tags` section.
+
 ## [1.2.0] - 2019-04-29
 ### Added
 - [`naming.md`](naming.md).
