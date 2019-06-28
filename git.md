@@ -2,57 +2,91 @@
 
 ## On Commits
 
-GOOD:
-- Concise and relevant commit messages.
-- Each commit as isolated from each other as possible.
+Try to keep each commit message concise, relevant, and _release-notes-ready_:
+- Leverage **first line** as **title**, try to confine it within 50 characters long. This part should be usable for release notes.
+-  Optionally put **lengthier details** in the following **new lines**, as bullet points or paragraphs. They should contain all technical details that are valuable for fellow contributors and reviewers.
 
-BAD:
-- Commit messages that contribute no value to the readers of your code -- such as `test`, `lint`, `debug`, `adsfasdf`.
-- Commit changes not properly reflected in commit message -- use `$git commit --amend` to fix the message.
+Try to keep each commit as isolated from each other as possible:
+- Scope closely coupled code changes within a single commit.
+- Special cases such as structural refactors should live in their own commits, and marked so in the commit messages, instead of mixing with feature alteration code changes.
+- On the other hand, when non-impacting minor code changes happen, amend/squash/cherry-pick-squash into relevant commits, instead of forming their own.
 
-## On Branches
+```COMMIT_EDITMSG
+# Feature Change Example
 
-GOOD:
-- Always stay up-to-date with the upstream main branch (usually `master`) through `rebase` or `merge`. Follow [this rule](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) when deciding on whether to `rebase` the main branch into your working branch.
-- Perform controlled squashes as much as needed, to maintain a good commit history (see [`commit`](#commit) section above).
-- Bundle and cherry-pick only relevant commits, within a designated scope.
-- Name the branch as `scope/change-title`, and if absolutely necessary, sub-scoped as `scope/sub-scope/change-title`.
+# 👍 GOOD
+# Title line, release notes ready
+Hub - extend Dataset Flow with JSON parsing
 
-BAD:
-- Leave local and remote diverged -- force-push in a working branch is ok.
-- No irrelevant commits to the designated scope -- start branch(es) to apply those.
-- Too many sub-scopes -- preferably only one `/` in the branch name.
+# Detail lines, technical for contributors and reviewers
+- `FileReader` based JSON parser, with API emulated as Papaparse's
+- `Dropzone` usage restrained from multiple files
+- Extend column data type inference logic to handle non-string values
+
+# 👎 BAD (lack of main feature, and ambiguous phrasing)
+add JSON
+```
+
+```COMMIT_EDITMSG
+# No Feature Change Example
+
+# 👍 GOOD
+Hub - no feature change refactor
+
+- Workflow components rewritten using React hooks
+- Hooks factored out to be reusable across different workflows
+- Nomenclature changes
+
+# 👎 BAD
+refactor
+```
+
+**Tip**: when authoring commit messages, use `git commit -v` to get a comfortable editor environment (of your choice), as well as having the code changes right below for reference.
+
+## On Local Branches
+
+Try to stay up-to-date with the upstream main branch (usually `master`), and also actively perform `git fetch --prune` to clean up idle references.
+
+Perform controlled commit amends, squashes, and cherry-picks as much as needed, to maintain a good commit history (see [`On commits`](#on-commits) section) when pushed to upstream.
+
+Name the branch as `scope/change-title`, or if needed, `scope/sub-scope/change-title` where `scope` depends on convention on a per-project basis. Resist the temptation to bundle out-of-scope commits within it, start new branches for those. If they need to be contiguous to function properly, chain-branch off from the `scope` branch instead of the main branch.
+
+```bash
+$ git branch
+  hub/dataset-flow
+* hub/csv/fix-parsing # contiguously branched off from hub/dataset-flow
+  master
+```
 
 ## On Pull/Merge Requests
 
-GOOD:
-- Control the length and depth of the code changes within each request, make it digestible within 30 minutes, or even less.
-- Write [`CHANGELOG`](https://keepachangelog.com)-like summaries of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences.
-- Do either merge commit or rebase merge:
-    - Through **merge commit** (merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge)) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
-    - Through **rebase merge** -- the relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
-- Either mark the issue(s) that the request fixes (`fixes #123`, `closes #321`), or label the request itself when there are no relevant issues -- not both.
-- Prefix request title with `[G2M]` to signal for "Good to Merge", gently broadcast for attention in relevant Slack channel(s). Change request title prefix to `[WIP]` when it needs to be worked a bit more.
+Try to maintain a good length and depth of the code changes within each request, make it digestible within 30 minutes or less.
 
-BAD:
-- Lengthy code changes -- this often requires some forward thinking on how to structure the changes (TODO: to be discussed in another section).
-- No description -- unless the title alone suffices all the changes.
-- Label requests that already have target issue(es).
-- Squash merge into the main branch -- this reverts our previous practice, read above and understand why.
+Try to keep a [`CHANGELOG`](https://keepachangelog.com)-like summaries of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. This can be automated/semi-automated through good practices [on commits](#on-commits).
+
+Perform either merge commit or rebase merge:
+- Through **merge commit** (merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge)) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
+- Through **rebase merge** -- the relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
+
+Reference and mark relevant issues as fixed (`fixes #123`), or label the request itself when there are no relevant issues -- not both.
+
+Start the request as a draft and/or mark in the title with `[WIP]` prefix when it needs more time to complete. Mark it ready to review, and/or with a `[G2M]` prefix in the title to signal its readiness.
+
+**Tip**: DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at all times, and always with only a single branch/track of development.
 
 ## On Reviewing
 
-GOOD:
-- Set aside some quality time as a routine to proactively review others' pull/merge requests, as thoroughly as your bandwidth allows.
-- Actively self-review and monitor your own pull/merge requests -- be on the lookout for potential conflicts after other requests have been merged.
-- When giving code change requests, think twice before you submit -- be constructive, and be ready to defend your reasons.
-- If the code change suggestion does not warrant definitive reasoning, but would still be constructive in your opinion, make it as a non-blocking comment.
-- Where relevant, go through the changes in deploy preview or in your local environment to check for UI/UX flow as well as bugs.
-- Prioritize on reviewing those that marked as bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that it is a well-followed convention in the given project.
+Try to set aside some quality time as a routine to proactively review others' pull/merge requests, as thoroughly as your bandwidth allows. If there's no time, and/or no willingness, do not just cast approval without reviewing.
 
-BAD:
-- Cast approval without actually reviewing it -- this is obvious, as code reviews should be for quality control, **not** for bureaucratic control.
-- Speak with a bad tone, or demand *your* own opinion as a code change request -- read what you wrote, phrase or code, as if it was given to you, see if it justifies.
+Actively self-review and monitor your own pull/merge requests -- be on the lookout for potential conflicts after other requests have been merged.
+
+When giving code change requests, think twice before you submit -- be reasonable and constructive, and be ready to defend your reasons.
+
+If the code change suggestion does not warrant definitive reasoning, but would still be constructive in your opinion, make it as a non-blocking comment.
+
+Where relevant, go through the changes in deploy preview or in your local environment to check for UI/UX flow as well as bugs.
+
+Prioritize on reviewing those that marked as bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that it is a well-followed convention in the given project.
 
 ## General references
 
