@@ -91,15 +91,21 @@ Try to maintain a good length and depth of the code changes within each request,
 
 Try to keep a [`CHANGELOG`](https://keepachangelog.com)-like summaries of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. This can be automated/semi-automated through good practices [on commits](#on-commits).
 
-Perform either merge commit or rebase merge:
-- Through **merge commit** (merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge)) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
-- Through **rebase merge** -- the relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
-
 Reference and mark relevant issues as fixed (`fixes #123`), or label the request itself when there are no relevant issues -- not both.
 
 Start the request as a draft and/or mark in the title with `[WIP]` prefix when it needs more time to complete. Mark it ready to review, and/or with a `[G2M]` prefix in the title to signal its readiness.
 
-**Tip**: DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at all times, and always with only a single branch/track of development.
+When reviewer approved the PR, it's ready for merge. Three ways to meget it through GitHub:
+
+#### Create a merge commit
+Through **merge commit** (merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge)) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
+  
+#### Squash and merge
+DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at all times, and always with only a single branch/track of development.
+
+#### Rebase and merge
+Through **rebase merge** -- the relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
+
 
 ## On Reviewing
 
