@@ -99,6 +99,8 @@ Reference and mark relevant issues as fixed (`fixes #123`), or label the request
 
 Start the request as a draft and/or mark in the title with `[WIP]` prefix when it needs more time to complete. Mark it ready to review, and/or with a `[G2M]` prefix in the title to signal its readiness.
 
+For changes that depend on another PR, reference it directly through the GitHub "#" shortcut or through a copied link when it is in another repo.
+
 **Tip**: DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at all times, and always with only a single branch/track of development.
 
 ## On Reviewing
