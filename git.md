@@ -106,7 +106,6 @@ DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at
 #### Rebase and merge
 The relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
 
-
 ## On Reviewing
 
 Try to set aside some quality time as a routine to proactively review others' pull/merge requests, as thoroughly as your bandwidth allows. If there's no time, and/or no willingness, do not just cast approval without reviewing.
