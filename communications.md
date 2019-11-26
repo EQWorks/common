@@ -18,13 +18,13 @@ As for emails, since its innate opt-out (or can't even) nature, you may do the f
 
 ## Asynchronous by Default
 
-Whenever you feel the need to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and the fact that they may be in the "zone" and should not be interrupted if you are at all considerate about others and their productivity.
+Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and the fact that they may be in the "zone" and should not be interrupted if you are at all considerate about others and their productivity.
 
-Try to communicate in such order:
+Try to communicate, and if necessary, elevate its attention-seeking priority in such order:
 
-1. Send a well-written message in a relevant Slack channel (or Github issue, or Asana project).
-2. If this needs a certain person's or group's attention, elevate its priority by pinging them right below the message, or start a thread and ping them there.
-3. A rare but not impossible reactor-meltdown level of urgency, yell out in any synchronous manner and get people's attention.
+1. Send a well-written message in a relevant Slack channel, or GitHub issues, etc.
+2. If this needs a certain person's or group's attention, ping them right below or start a thread and ping them there.
+3. In a rare "meltdown" level of urgency, yell out in any synchronous manner and get people's attention.
 
 ## Text by Default
 
@@ -45,17 +45,17 @@ For asynchronous communications, try to allocate a relatively fixed schedule to 
 
 For synchronous communications:
 
-1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes...
+1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes... better yet, see if you can do it without a meeting.
 2. Write down the agenda, and prepare every participant.
 3. Instead of abstractly talk about a problem in a hollow boardroom, demonstrate the problem, perhaps on-site or screen-shared (which can be your local branch of a project that you're working on). Do not stretch beyond the agreed timebox, make a decision and move on.
 
 ## Minimize Processes and Tools
 
-Processes and tools are supposed to serve us and to save us from events that undermine our productivity or even help to boost it. But on many occasions, these processes and tools become a burden on the makers. Instead, they merely become things for backline delegators to flirt with, to feel good and feel important about themselves. Or they become a means for those that are not good or have no interest at their job to deviate from real tasks, to show that they have poured in endless hours on the planning and blueprints and thus worthy of the pretended job security.
+Processes and tools are supposed to serve us and to save us from events that undermine our productivity or even help to boost it. But on many occasions, these processes and tools become a burden on the makers. Instead, they merely become things for backline delegators to flirt with, to feel good and feel important about themselves. Or they become a means for those that have no interest at their job to deviate from real tasks, to show that they have poured in endless hours on the planning and blueprints and thus worthy of the pretended job security.
 
 Thus processes such as SCRUM, and tools such as Slack, which originally set out to solve real problems, have become things that people criticize or even hate. Because maintaining discipline for every participant of a tool or a process is an astonishingly hard task.
 
-Everyone has a different way of working and thinking. This fact should be embraced, instead of introducing rules and processes to resist or neglect it.
+Also, try to take into consideration other's production processes.
 
 Therefore, try to minimize processes and tools. Before you demand for a tool that can nicely map out your product's user workflow, use a stack of post-it and some colored markers, map it out on a virtual or physical whiteboard; instead of putting the effort to shop for a progress tracking tool that can make you happy (or miserable) about yourself at the end of a working day, how about start with writing the todos on a piece of paper.
 
@@ -66,3 +66,13 @@ It's no wonders that forward-thinking managers at larger organizations even dare
 A busy email inbox is not the only contributing factor to interruptions. Nowadays we have way too many channels of receiving information, by choice or not.
 
 So instead of achieving "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. Some platforms offer one simple toggle to enter the "Do Not Disturb" mode. Use it. Clear up your desktop, notification stacks, browser windows/tabs, etc. This helps to minimize distractions, so you can find what you need to focus on, faster.
+
+## General references
+
+A lot of above were derived or borrowed from the following:
+
+- [Rework](https://www.amazon.ca/Rework-Jason-Fried/dp/0307463745) and [Remote](https://www.amazon.ca/Remote-Office-Required-Jason-Fried/dp/0804137501) - books, by Jason Fried, David Heinemeier Hansson.
+- [Optimize for Happiness](http://tom.preston-werner.com/2010/10/18/optimize-for-happiness.html) - talk/blog post, by Tom Preston-Werner.
+- [How GitHub Works](https://zachholman.com/posts/how-github-works/) - talk/blog posts, by Zach Holman.
+- [Re-Imagining Work](https://www.youtube.com/watch?v=G11t6XAIce0&list=PL39BF9545D740ECFF&index=4) - RSA talk, by Dave Coplin.
+- [Maker's Schedule, Manager's Schedule](http://www.paulgraham.com/makersschedule.html) - blog post, by Paul Graham.
