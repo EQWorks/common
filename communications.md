@@ -32,7 +32,7 @@ Before you decide to have a face-to-face or voice/video conference, take some ti
 
 ## Transparent by Default
 
-Don't be embarrassed about asking "stupid" questions. Try to always write your messages in a publically accessible (or at a bare minimum, team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
+Don't be embarrassed about asking "silly" questions. Try to always write your messages in a publically accessible (or at a bare minimum, team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
 
 A few exceptions:
 
@@ -48,24 +48,19 @@ For synchronous communications:
 1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes... better yet, see if you can do it without a meeting.
 2. Write down the agenda, and prepare every participant.
 3. Instead of abstractly talk about a problem in a hollow boardroom, demonstrate the problem, perhaps on-site or screen-shared (which can be your local branch of a project that you're working on). Do not stretch beyond the agreed timebox, make a decision and move on.
+4. Ensure there are clear and concise takeaways. Every meeting must have a clear outcome.
+5. One of the individuals attending should concisely summarize the meeting and key points of the meeting. These notes should be posted on an appropriate channel for both participants and anyone else who might be interested in the contents but couldn't attend/join the meeting.
+6. Each meeting is the collective productivity value of all its participants. Consider each participant to be on average contributing $200/hr; it is always good to judge the need/value of each meeting against the economic value of the meeting (what other productive tasks could these participants be doing?).
 
 ## Minimize Processes and Tools
 
-Processes and tools are supposed to serve us and to save us from events that undermine our productivity or even help to boost it. But on many occasions, these processes and tools become a burden on the makers. Instead, they merely become things for backline delegators to flirt with, to feel good and feel important about themselves. Or they become a means for those that have no interest at their job to deviate from real tasks, to show that they have poured in endless hours on the planning and blueprints and thus worthy of the pretended job security.
-
-Thus processes such as SCRUM, and tools such as Slack, which originally set out to solve real problems, have become things that people criticize or even hate. Because maintaining discipline for every participant of a tool or a process is an astonishingly hard task.
-
-Also, try to take into consideration other's production processes.
-
-Therefore, try to minimize processes and tools. Before you demand for a tool that can nicely map out your product's user workflow, use a stack of post-it and some colored markers, map it out on a virtual or physical whiteboard; instead of putting the effort to shop for a progress tracking tool that can make you happy (or miserable) about yourself at the end of a working day, how about start with writing the todos on a piece of paper.
-
-It's no wonders that forward-thinking managers at larger organizations even dare to bypass settled processes, so that teams can install a newer version of an operating system that's necessary for development, instead of waiting for the process to eventually get the IT department to have it done, perhaps after 3 months.
+Try to focus on real problem solving and creative endeavors instead of drowning yourself in processes and tools. Also, try to take into consideration other's production processes.
 
 ## ~~"Inbox Zero~~ Everything Zero"
 
-A busy email inbox is not the only contributing factor to interruptions. Nowadays we have way too many channels of receiving information, by choice or not.
+A busy email inbox is not the only contributing factor to interruptions. Nowadays we have way too many channels of receiving information, by choice or otherwise.
 
-So instead of achieving "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. Some platforms offer one simple toggle to enter the "Do Not Disturb" mode. Use it. Clear up your desktop, notification stacks, browser windows/tabs, etc. This helps to minimize distractions, so you can find what you need to focus on, faster.
+Instead of striving to achieve "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. Some platforms offer one simple toggle to enter the "Do Not Disturb" mode. Use it. Clear up your desktop, notification stacks, browser windows/tabs, etc. This helps to minimize distractions, so you can find what you need to focus on, faster.
 
 ## General references
 
