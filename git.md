@@ -4,6 +4,7 @@
 
 Try to keep each commit message concise, relevant, and _release-notes-ready_:
 - Leverage **first line** as **title**, try to confine it within 50 characters long. This part should be usable for release notes.
+- Clearly specify if the commit contains breaking changes.
 -  Optionally put **lengthier details** in the following **new lines**, as bullet points or paragraphs. They should contain all technical details that are valuable for fellow contributors and reviewers.
 
 Try to keep each commit as isolated from each other as possible:
@@ -11,9 +12,9 @@ Try to keep each commit as isolated from each other as possible:
 - Special cases such as structural refactors should live in their own commits, and marked so in the commit messages, instead of mixing with feature alteration code changes.
 - On the other hand, when non-impacting minor code changes happen, amend/squash/cherry-pick-squash into relevant commits, instead of forming their own.
 
-```COMMIT_EDITMSG
-# Feature Change Example
+### Feature Change Example
 
+```COMMIT_EDITMSG
 # 👍 GOOD
 # Title line, release notes ready
 Hub - extend Dataset Flow with JSON parsing
@@ -27,9 +28,9 @@ Hub - extend Dataset Flow with JSON parsing
 add JSON
 ```
 
-```COMMIT_EDITMSG
-# No Feature Change Example
+### No Feature Change Example
 
+```COMMIT_EDITMSG
 # 👍 GOOD
 Hub - no feature change refactor
 
@@ -39,6 +40,16 @@ Hub - no feature change refactor
 
 # 👎 BAD
 refactor
+```
+
+### Breaking Change Example
+
+```COMMIT_EDITMSG
+# 👍 GOOD
+builder (BACKWARD INCOMPAT w/ FO) - v4 POI parameters
+
+# 👎 BAD
+builder - v4 POI parameters
 ```
 
 **Tip**: when authoring commit messages, use `git commit -v` to get a comfortable editor environment (of your choice), as well as having the code changes right below for reference.
@@ -99,7 +110,7 @@ When reviewer approved the PR, it's ready for merge. Three ways to meget it thro
 
 #### Create a merge commit
 Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
-  
+
 #### Squash and merge
 DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at all times, and always with only a single branch/track of development.
 
