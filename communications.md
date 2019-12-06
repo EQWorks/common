@@ -2,13 +2,13 @@
 
 ## Opt-in
 
-Opt-in to Slack channels, calendars, or Asana projects, etc., that you are interested or obligated to. Configure notifications on these tools to suit this mindset:
+Opt-in to Slack channels, calendars, or Asana projects, etc., that you are interested in or obligated to. Configure notifications on these tools to suit this mindset:
 
 - Notification on direct ping and private/direct message.
 - Optional notification on direct group ping, and thread messages.
 - Silent/no notification on the rest of the messages.
 
-As soon as you are not obligated or interested in any of them, you may opt-out.
+Opt-out from ones you are no longer interested in or obligated to.
 
 As for emails, you may do the following:
 
