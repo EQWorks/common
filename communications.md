@@ -2,15 +2,15 @@
 
 ## Opt-in
 
-Opt-in to Slack channels, calendars, Asana or Basecamp projects, etc., that you _are_ interested in and/or obligated to. Configure notifications on these tools to suit this mindset:
+Opt-in to Slack channels, calendars, or Asana projects, etc., that you are interested or obligated to. Configure notifications on these tools to suit this mindset:
 
 - Notification on direct ping and private/direct message.
 - Optional notification on direct group ping, and thread messages.
 - Silent/no notification on the rest of the messages.
 
-As soon as you are _not_ obligated, and/or interested in any of them, GTFO.
+As soon as you are not obligated or interested in any of them, you may opt-out.
 
-As for emails, since its innate opt-out (or can't even) nature, you may do the following:
+As for emails, you may do the following:
 
 - Pin/star items that need future attention. Archive them as soon as they're done, or no longer needed.
 - Optionally snooze items that need future attention. Archive them as soon as they're done, or no longer needed.
@@ -20,11 +20,13 @@ As for emails, since its innate opt-out (or can't even) nature, you may do the f
 
 Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and the fact that they may be in the "zone" and should not be interrupted if you are at all considerate about others and their productivity.
 
-Try to communicate, and if necessary, elevate its attention-seeking priority in such order:
+When necessary, elevate your message's attention-seeking priority in such order:
 
 1. Send a well-written message in a relevant Slack channel, or GitHub issues, etc.
 2. If this needs a certain person's or group's attention, ping them right below or start a thread and ping them there.
 3. In a rare "meltdown" level of urgency, yell out in any synchronous manner and get people's attention.
+
+Asynchronous communication has an innate chaotic nature. It should be every participant's, at least initiator's obligation to organize and summarize afterward and write it in well-formatted documentation as a part of our internal knowledge base. At a bare minimum, copy the transcript of relevant discussions into a place for future reference or refinement to be retained in the knowledge base.
 
 ## Text by Default
 
@@ -32,24 +34,24 @@ Before you decide to have a face-to-face or voice/video conference, take some ti
 
 ## Transparent by Default
 
-Don't be embarrassed about asking "silly" questions. Try to always write your messages in a publically accessible (or at a bare minimum, team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
+Don't be embarrassed about asking "silly" questions. Try to always write your messages in a publically accessible (or at least a team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
 
 A few exceptions:
 
-- When you are communicating work-related credentials or secrets, use direct messages, or very well-controlled private channels.
-- When you are talking about subjects that are irrelevant to work, use direct messages (but to be honest, wouldn't one of the social media/chat apps fit better?).
+- When you communicate credentials or secrets, use direct messages, or very well-controlled private channels.
+- When you talk about subjects that are irrelevant to work, use direct messages (but to be honest, wouldn't one of the social media/chat apps fit better?).
 
 ## Budget Communication Time
 
-For asynchronous communications, try to allocate a relatively fixed schedule to initiate, check and respond to messages. To a certain extent, this means try to optimize for the whole block of contiguous time that suits better for our job, which has an innate quality of being a creative endeavor.
+For asynchronous communications, try to allocate yourself a relatively fixed schedule to initiate, check and respond to messages. To a certain extent, this means try to optimize for the whole block of contiguous time that suits better for your job (knowledge-based, creative endeavors).
 
 For synchronous communications:
 
 1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes... better yet, see if you can do it without a meeting.
-2. Write down the agenda, and prepare every participant.
-3. Instead of abstractly talk about a problem in a hollow boardroom, demonstrate the problem, perhaps on-site or screen-shared (which can be your local branch of a project that you're working on). Do not stretch beyond the agreed timebox, make a decision and move on.
+2. Write down the agenda, and prepare every participant by sending the agenda out before the meeting.
+3. Instead of abstractly talk about a problem in a hollow boardroom, demonstrate the problem, perhaps on-site or screen-shared. Do not stretch beyond the agreed timebox, make a decision and move on.
 4. Ensure there are clear and concise takeaways. Every meeting must have a clear outcome.
-5. One of the individuals attending should concisely summarize the meeting and key points of the meeting. These notes should be posted on an appropriate channel for both participants and anyone else who might be interested in the contents but couldn't attend/join the meeting.
+5. One of the participants should concisely summarize the meeting and its key points. These notes should be posted on an appropriate channel for both participants and anyone else who might be interested in the contents but couldn't attend/join the meeting.
 6. Each meeting is the collective productivity value of all its participants. Consider each participant to be on average contributing $200/hr; it is always good to judge the need/value of each meeting against the economic value of the meeting (what other productive tasks could these participants be doing?).
 
 ## Minimize Processes and Tools
