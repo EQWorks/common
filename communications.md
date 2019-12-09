@@ -1,26 +1,21 @@
 # Communications
 
-## Opt-in
+## First line of Communication: Texting
 
-Opt-in to Slack channels, calendars, or Asana projects, etc., that you are interested in or obligated to. Configure notifications on these tools to suit this mindset:
+We use a few tools to help team members communicate with one another: Slack, Gmail and Asana. Before you decide to have a face-to-face or voice/video conference, take some time to organize your thoughts, and write them down. Revise it to be as concise as possible. If it's not urgently blocking all of your next tasks, use Slack, Gmail or Asana to contact another team member asynchronously (in an intermittent manner).
+
+Budget communiction time. Try to allocate yourself a relatively fixed schedule to initiate, check and respond to messages. To a certain extent, this means try to optimize for the whole block of contiguous time that suits better for your job (knowledge-based, creative endeavors).
+
+#### - Slack -
+Opt-in: Opt-in to the channels that you are interested in or obligated to. Set up your notifications on these tools to suit your needs:
 
 - Notification on direct ping and private/direct message.
 - Optional notification on direct group ping, and thread messages.
 - Silent/no notification on the rest of the messages.
 
-Opt-out from ones you are no longer interested in or obligated to.
+Opt-out: Opt-out from ones you are no longer interested in or obligated to.
 
-As for emails, you may do the following:
-
-- Pin/star items that need future attention. Archive them as soon as they're done, or no longer needed.
-- Optionally snooze items that need future attention. Archive them as soon as they're done, or no longer needed.
-- Archive the rest.
-
-## Asynchronous by Default
-
-Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and the fact that they may be in the "zone" and should not be interrupted if you are at all considerate about others and their productivity.
-
-When necessary, elevate your message's attention-seeking priority in such order:
+Asynchronous by Default: Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and the fact that they may be in the "zone" and should not be interrupted if you are at all considerate about others and their productivity. When necessary, elevate your message's attention-seeking priority in such order:
 
 1. Send a well-written message in a relevant Slack channel, or GitHub issues, etc.
 2. If this needs a certain person's or group's attention, ping them right below or start a thread and ping them there.
@@ -28,24 +23,35 @@ When necessary, elevate your message's attention-seeking priority in such order:
 
 Asynchronous communication has an innate chaotic nature. It should be every participant's, at least initiator's obligation to organize and summarize afterward and write it in well-formatted documentation as a part of our internal knowledge base. At a bare minimum, copy the transcript of relevant discussions into a place for future reference or refinement to be retained in the knowledge base.
 
-## Text by Default
-
-Before you decide to have a face-to-face or voice/video conference, take some time to organize your thoughts, and write them down. Revise it to be as concise as possible. If it's not urgently blocking all of your next tasks, asynchronously send this message.
-
-## Transparent by Default
-
-Don't be embarrassed about asking "silly" questions. Try to always write your messages in a publically accessible (or at least a team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
+Transparent by Default: Don't be embarrassed about asking "silly" questions. Try to always write your messages in a publically accessible (or at least a team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
 
 A few exceptions:
 
 - When you communicate credentials or secrets, use direct messages, or very well-controlled private channels.
 - When you talk about subjects that are irrelevant to work, use direct messages (but to be honest, wouldn't one of the social media/chat apps fit better?).
 
-## Budget Communication Time
 
-For asynchronous communications, try to allocate yourself a relatively fixed schedule to initiate, check and respond to messages. To a certain extent, this means try to optimize for the whole block of contiguous time that suits better for your job (knowledge-based, creative endeavors).
+Nowadays we have way too many channels of receiving information, by choice or otherwise. Instead of striving to achieve "Notification Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. Some platforms like Slack offer one simple toggle to enter the "Do Not Disturb" mode. Use it to minimize distractions, so you can find what you need to focus on, faster.
 
-For synchronous communications:
+#### - Gmail -
+
+Opt-in to google calendars you are interested in or obligated to.
+
+You may do the following:
+
+- Pin/star items that need future attention. Archive them as soon as they're done, or no longer needed.
+- Optionally snooze items that need future attention. Archive them as soon as they're done, or no longer needed.
+- Archive the rest.
+
+A busy email inbox is a contributing factor to interruptions. Instead of striving to achieve "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related.
+
+#### - Asana -
+
+Opt-in to projects that you are interested in or obligated to.
+
+## Second line of Communication: Meeting
+
+If you need to set up a meeting with someone, budget communication time.
 
 1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes... better yet, see if you can do it without a meeting.
 2. Write down the agenda, and prepare every participant by sending the agenda out before the meeting.
@@ -58,11 +64,6 @@ For synchronous communications:
 
 Try to focus on real problem solving and creative endeavors instead of drowning yourself in processes and tools. Also, try to take into consideration other's production processes.
 
-## ~~"Inbox Zero~~ Everything Zero"
-
-A busy email inbox is not the only contributing factor to interruptions. Nowadays we have way too many channels of receiving information, by choice or otherwise.
-
-Instead of striving to achieve "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. Some platforms offer one simple toggle to enter the "Do Not Disturb" mode. Use it. Clear up your desktop, notification stacks, browser windows/tabs, etc. This helps to minimize distractions, so you can find what you need to focus on, faster.
 
 ## General references
 
