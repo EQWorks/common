@@ -8,4 +8,4 @@ Common practices and disciplines that help to minimize common obstacles and fric
 
 ## On [naming](naming.md)
 
-## On [Workspace automation](workspace-automation.md)
+## On [workspace automation](workspace-automation.md)
