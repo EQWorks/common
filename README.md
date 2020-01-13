@@ -7,3 +7,5 @@ Common practices and disciplines that help to minimize common obstacles and fric
 ## On [git](git.md)
 
 ## On [naming](naming.md)
+
+## On [Workspace automation](workspace-automation.md)
