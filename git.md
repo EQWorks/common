@@ -54,7 +54,9 @@ builder - v4 POI parameters
 
 **Tip**: when authoring commit messages, use `git commit -v` to get a comfortable editor environment (of your choice), as well as having the code changes right below for reference.
 
-## On Local Branches
+## On Local Development Branches
+
+Try **NOT** to directly commit to `master`. Even if you are the sole maintainer now, there is always the possibility of new members joining.
 
 Try to stay up-to-date with the upstream main branch (usually `master`), and also actively perform `git fetch --prune` to clean up idle references.
 
@@ -67,6 +69,19 @@ $ git branch
   hub/dataset-flow
 * hub/csv/fix-parsing # contiguously branched off from hub/dataset-flow
   master
+```
+
+### Common Pitfall - Accidental `git commit` instead of `git rebase --continue`
+
+An [Q&A on Stackoverflow](https://stackoverflow.com/questions/6457044/forgot-git-rebase-continue-and-did-git-commit-how-to-fix) covers this very case. In short:
+
+```bash
+# It moves the HEAD pointer to its parent but keeps the work tree
+# and adds the merge change to the index
+$ git reset --soft HEAD^
+
+# So you can continue rebasing with
+$ git rebase --continue  # as before
 ```
 
 ## On Tags
@@ -112,7 +127,7 @@ When reviewer approved the PR, it's ready for merge. Three ways to meget it thro
 Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
 
 #### Squash and merge
-DO NOT SQUASH MERGE, unless the project is always maintained by a single mind at all times, and always with only a single branch/track of development.
+**TRY NOT TO SQUASH MERGE.**
 
 #### Rebase and merge
 The relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
