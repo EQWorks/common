@@ -84,6 +84,55 @@ $ git reset --soft HEAD^
 $ git rebase --continue  # as before
 ```
 
+### Squash Commits
+
+Squash commits with `git rebase -i` (`i` for interactive), which gives more granular control than `git commit --amend`.
+
+Example:
+1. `git rebase -i HEAD~3` brings 3 commits from and including `HEAD`:
+
+```bash
+pick 6df9b94 has_aoi - add query to check if each poi could be found in aoi report table - if yes/no: response will include has_aoi flag indicating true/false
+pick 6d9075c mend
+pick 95e9ccd report_vwi - add has_aoi query logic to vwi reports
+```
+Followed by a series of commands to edit the commits:
+```bash
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+```
+2. edit and replace the key word `pick` with `squash` (or `s`):  
+
+Upon saving, git editor will prompt with the view to edit the commit messages:
+```bash
+# This is a combination of 2 commits.
+# This is the 1st commit message:
+
+has_aoi - add query to check if each poi could be found in aoi report table
+- if yes/no: response will include has_aoi flag indicating true/false
+
+# This is the commit message #2:
+
+mend
+```
+Save and exit to complete the squashing.  
+
+3. `git push --force`:  
+
+Run `git status` to confirm your changes:
+```bash
+On branch report_wi/hasAoiFlag
+Your branch and 'origin/report_wi/hasAoiFlag' have diverged,
+and have 2 and 3 different commits each, respectively.
+```
+Run `git push --force` to update your branch.
+
 ## On Tags
 
 Try to maintain a tagging practice that suits the project's release cycle. Adopt [semantic versioning](https://semver.org/) wherever possible.
