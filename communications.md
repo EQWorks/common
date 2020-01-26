@@ -1,89 +1,49 @@
 # Communications
 
-## General guidelines
+## Introduction
 
-Communication is critical in any organization but in doing so, we want to ensure that we are considerate of other people's production processes and time. Therefore, the focus should be on real problem solving and creative endeavors instead of drowning oneself in processes and tools when communicating with one another.
+Communication is critical in any organization but in doing so, we want to ensure that we are considerate of other people's production processes and time. If done well, we can facilitate great knowledge exchange while still being able to do good work.
 
-## First line of Communication: Texting
+## Tools used for Communication
 
-We use a few tools to help team members communicate with one another: Slack, G Suite and Asana. Before you decide to have a face-to-face or voice/video conference, take some time to organize your thoughts, and write them down. Revise it to be as concise as possible. If it's not urgently blocking all of your next tasks, use Slack, Gmail or Asana to contact another team member asynchronously (in an intermittent manner).
+We use a few tools to aid customer and team (inter and intra) communication: Slack, G Suite and Asana.
 
-Budget communication time. Try to allocate yourself a relatively fixed schedule to initiate, check and respond to messages. To a certain extent, this means try to optimize for the whole block of contiguous time that suits better for your job (knowledge-based, creative endeavors).
+Slack is our primary tool for communication where one can message, ping or ask questions to team members in channels depending on projects, interests and teams e.g. #snoke #random #general
 
-#### - Internal & External Messaging Tool: Slack -
-Opt-in: Join channels that you are interested in or obligated to.
+G Suite consists of 1) Gmail, used for client and team correspondence and 2) Calendar, used for setting up meetings by creating an event invitation & booking one of the available rooms.
 
-Setting up Notifications: Once you're part of a channel, set up your notifications to suit your needs:
+Asana is commonly used for project management and any other processes we deem it fit to be used for (e.g Locus Builder Redesign, Office Availability, Weekly Meetings, etc.)
 
-- Notification on direct ping and private/direct message.
-- Optional notification on direct group ping, and thread messages.
-- Silent/no notification on the rest of the messages.
+## Opt-in & Opt-out
 
-Minimize Distractions: Nowadays we have way too many channels of receiving information, by choice or otherwise. Instead of striving to achieve "Notification Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. Some platforms like Slack offer one simple toggle to enter the "Do Not Disturb" mode. Use it to minimize distractions, so you can find what you need to focus on, faster.
+Join Slack channels, Google calendars and Asana projects that you are obligated to or are interested in joining. Similarly, feel free to leave channels, calendars and projects you are no longer required to stay or are interested in.
 
-Opt-out: Leave channels that you are no longer interested in or obligated to.
+## Choosing appropriate tools
 
-Asynchronous Communication by Default: Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and their productivity and the fact that they may be in the "zone" and should not be interrupted. 
+Our communication tools encompasses both formal and informal communications so we may want to consider the following factors:
+* Your audience (Is this important to the Locus team or Atom team?)
+* The size of the audience (Is this relevant to one person or a whole team?)
+* Content of message and reusability (Will this message be useful to someone else in the future?)
 
-When necessary, elevate your message's attention-seeking priority in such order:
+In general, if it’s applicable to more than one person, share in the relevant Slack channel or Asana project so it can be searchable and found in an accessible manner. For example, asking questions in a Slack channel allow responses to those questions to become part of our knowledge base. Only exception is sharing common credentials or secrets - we have a well-controlled private channel for this.
 
-1. Send a well-written message in a relevant Slack channel
-2. If this needs a certain person's or group's attention, ping them right below or start a thread and ping them there.
-3. In a rare "meltdown" level of urgency, yell out in any synchronous manner and get people's attention.
+Each person communicates and receives information differently so if something requires attention, feel free to verbally ask colleagues or check their Slack status for how they would be like to be communicated. e.g. ping on Slack versus asking in person.
 
-Documentation - Consolidation: Asynchronous communication can become chaotic so it should be every participant's, at least the initiator's obligation to organize and summarize afterward and write it in well-formatted documentation as a part of our internal knowledge base. At a bare minimum, copy the transcript of relevant discussions into a place for future reference or refinement to be retained in the knowledge base.
+When there is doubt, use Slack.
 
-Documentation - Transparency: Don't be embarrassed about asking "silly" questions. Try to always write your messages in a publically accessible (or at least a team accessible) channel. This way, the information is preserved and become searchable. Loosely, it becomes a part of the knowledge base, aside from more formal documentation.
+## Meetings
 
-A few exceptions:
+If a meeting is necessary, we have meeting spaces that can be pre-booked and used appropriately. Please be mindful of the duration time and goal for the meeting as we presently have limited private space for meetings and others might be waiting in line. If you’d like to get tips on how to ensure a productive meeting, click [here](https://github.com/EQWorks/common/productive-meeting.md).
 
-- When you communicate credentials or secrets, use direct messages, or very well-controlled private channels.
-- When you talk about subjects that are irrelevant to work, use direct messages (but to be honest, wouldn't one of the social media/chat apps fit better?).
+Meeting notes should be shared across for all participants and anyone else who might be interested in the contents but couldn’t attend. Feel free to post in appropriate Slack channels or Asana projects.
 
-#### - Internal & External Communication Tool: Gmail -
+## Balancing work with communication
 
-Minimize Distractions: A busy email inbox is a contributing factor to interruptions. Instead of striving to achieve "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. You may do the following:
+Consequently while maintaining communication, it can take away time for work so time management is important. For example, how you manage your notifications can greatly increase or decrease your productivity. Each person has a unique set of communication preferences that work for them. For example:
+* If you prefer to work on contiguous blocks uninterrupted, then allocate yourself a daily cadence to check and respond to messages - there is a Do Not Disturb Mode you can activate if you’d like
+* If you prefer to multitask, then feel free to keep all communications open
 
-- Pin/star items that need future attention. Archive them as soon as they're done, or no longer needed.
-- Optionally snooze items that need future attention. Archive them as soon as they're done, or no longer needed.
-- Archive the rest.
-
-Opt-out: Use filters to avoid receiving emails sent to a shared email address that you are not interested in.
-
-#### - Project Management & Product Issue Documentation: Asana -
-
-Opt-in: Join projects that you are interested in or obligated to.
-
-Minimize Distractions: Similar to Slack, instead of striving to achieve "Notification Zero", try to be as close as possible to "Everything Zero". Defer any information that is not work-related
-
-Documentation - Transparency: Provide as much detail as possible for other team members for context and opt-in to a task or issue if necessary.
-
-Opt-out: Leave projects that you are no longer interested in or obligated to.
-
-## Second line of Communication: Meeting
-
-If a meeting is necessary, budget the amount of time needed appropriately. Each meeting is the collective productivity value of all its participants. Consider each participant to be on average contributing $200/hr; it is always good to judge the need/value of each meeting against the economic value of the meeting (what other productive tasks could these participants be doing?).
-
-#### - Meetings & Events Tool: Google Calendar -
-
-Opt-in: Subscribe to calendars you are interested in or obligated to.
-
-Set up meetings: Use event invitations to set up a meeting and book one of the available rooms in the google invitation to avoid disappointment.
-
-Preparing for & During Meetings: To ensure that meetings are productive and are respectful of everyone's time and productivity, you may do the following:
-
-1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes... better yet, see if you can do it without a meeting.
-2. Write down the agenda, and prepare every participant by sending the agenda out before the meeting.
-3. Instead of abstractly talk about a problem in a hollow boardroom, demonstrate the problem, perhaps on-site or screen-shared. Do not stretch beyond the agreed timebox, make a decision and move on.
-4. Ensure there are clear and concise takeaways. Every meeting must have a clear outcome.
-5. One of the participants should concisely summarize the meeting and its key points.
-
-Opt-out: Unsubscribe from calendars you are no longer interested in.
-
-#### - Meeting Documentation: Slack -
-
-Documentation - Transparency & Consolidation: Meeting notes should be posted on an appropriate channel for both participants and anyone else who might be interested in the contents but couldn't attend/join the meeting.
-
+If you are unsure about how you can balance work and maintain communication, click [here](https://github.com/EQWorks/common/communication-practices.md) for more information on best practices that have been suggested. Feel free to see what works for you.
 
 ## General references
 
