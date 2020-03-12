@@ -23,7 +23,7 @@ Minimize Distractions: Nowadays we have way too many channels of receiving infor
 
 Opt-out: Leave channels that you are no longer interested in or obligated to.
 
-Asynchronous Communication by Default: Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and their productivity and the fact that they may be in the "zone" and should not be interrupted. 
+Asynchronous Communication by Default: Whenever you want to communicate with others, default to an asynchronous way. By doing so, you respect your coworker's time and their productivity and the fact that they may be in the "zone" and should not be interrupted.
 
 When necessary, elevate your message's attention-seeking priority in such order:
 
@@ -62,28 +62,9 @@ Opt-out: Leave projects that you are no longer interested in or obligated to.
 
 ## Second line of Communication: Meeting
 
-If a meeting is necessary, budget the amount of time needed appropriately. Each meeting is the collective productivity value of all its participants. Consider each participant to be on average contributing $200/hr; it is always good to judge the need/value of each meeting against the economic value of the meeting (what other productive tasks could these participants be doing?).
+Each meeting is the collective productivity value of all its participants. Consider each participant to be on average contributing $200/hr; it is always good to judge the need/value of each meeting against the economic value of the meeting (what other productive tasks could these participants be doing?).
 
-#### - Meetings & Events Tool: Google Calendar -
-
-Opt-in: Subscribe to calendars you are interested in or obligated to.
-
-Set up meetings: Use event invitations to set up a meeting and book one of the available rooms in the google invitation to avoid disappointment.
-
-Preparing for & During Meetings: To ensure that meetings are productive and are respectful of everyone's time and productivity, you may do the following:
-
-1. Aggressively timebox them. If a meeting was set to be an hour-long, ask if it can be shortened to 30 minutes; if it was set to be 30 minutes long, ask if it can be shortened to 15 minutes... better yet, see if you can do it without a meeting.
-2. Write down the agenda, and prepare every participant by sending the agenda out before the meeting.
-3. Instead of abstractly talk about a problem in a hollow boardroom, demonstrate the problem, perhaps on-site or screen-shared. Do not stretch beyond the agreed timebox, make a decision and move on.
-4. Ensure there are clear and concise takeaways. Every meeting must have a clear outcome.
-5. One of the participants should concisely summarize the meeting and its key points.
-
-Opt-out: Unsubscribe from calendars you are no longer interested in.
-
-#### - Meeting Documentation: Slack -
-
-Documentation - Transparency & Consolidation: Meeting notes should be posted on an appropriate channel for both participants and anyone else who might be interested in the contents but couldn't attend/join the meeting.
-
+However, if a meeting is necessary, consult the [guides on meetings](meetings.md)
 
 ## General references
 
