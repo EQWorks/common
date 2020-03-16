@@ -62,9 +62,13 @@ Opt-out: Leave projects that you are no longer interested in or obligated to.
 
 ## Second line of Communication: Meeting
 
-Each meeting is the collective productivity value of all its participants. Consider each participant to be on average contributing $200/hr; it is always good to judge the need/value of each meeting against the economic value of the meeting (what other productive tasks could these participants be doing?).
+Meetings can be used to address the following:
 
-However, if a meeting is necessary, consult the [guides on meetings](meetings.md)
+- Relaying updates & information about your project/work.
+- Seeking feedback about an idea/concept/topic.
+- Asking questions.
+
+Each meeting is the collective productivity value of all its participants so if a meeting is necessary, consult the [guides on meetings](meetings.md)
 
 ## General references
 
