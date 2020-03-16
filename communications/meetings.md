@@ -8,18 +8,18 @@ Objectives:
 
 - Determine the scope and minimum length of the meeting.
 - Give all participants as much context as possible to make an informed decision on RSVP.
-- Gather topics and issues for agenda items that are relevant to scope of the meeting,
+- Gather topics and issues for agenda items that are relevant to the scope of the meeting,
 done either individually or through crowdsourcing to increase accuracy and minimize bias
 - Asynchronously resolve as many agenda items as possible before the meeting.
 
 Guide:
 
 - Send a calendar invite to all participants, with Zoom/Hangouts Meet.
-- Create the meeting agenda on Hugo for the meeting, provide sufficent time ahead of the meeting to accommodate all participants.
+- Create the meeting agenda on Hugo for the meeting, provide sufficient time ahead of the meeting to accommodate all participants.
     - For a net-new meeting, the organizer(s) should define the initial scope of agenda items.
     - For a recurring meeting with past sessions, use the agenda/notes items from the previous meeting session as a starting point. Remove ones no longer needed or already resolved.
 - Initiate one or more meeting note(s) on Hugo for meeting agenda discussions.
-    - Send these notes to relevant Slack channel.
+    - Send these notes to the relevant Slack channel.
     - Edit meeting agenda to reflect the outcome of these discussions.
 - In each meeting note, participants write down briefing, information, knowledge, and ideas that are relevant.
     - For a recurring meeting with past sessions, focus on briefings of pending items from the previous meeting session, such as what each _has done_, _has been doing_, and _plans to do_. Give everyone else a sense of _where you are_ and _the direction you're heading to_. This helps others to determine if there are potential directional conflicts/blocks.
