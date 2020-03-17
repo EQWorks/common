@@ -48,6 +48,9 @@ refactor
 # 👍 GOOD
 builder (BACKWARD INCOMPAT w/ FO) - v4 POI parameters
 
+# 👍 GOOD (alt, shorter)
+builder (BREAK FO) - v4 POI parameters
+
 # 👎 BAD
 builder - v4 POI parameters
 ```
