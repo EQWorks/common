@@ -13,6 +13,7 @@ done either individually or through crowdsourcing to increase accuracy and minim
 
 Guide:
 - Send a calendar invite to all participants, with Zoom/Hangouts Meet.
+    - [How to use Zoom for meetings](https://docs.google.com/document/d/1WNqeFKXYv_ji_PUXBKq8nlD09ErqmB6VoWasPW-BUDI/edit?usp=sharing).
 - Create a meeting agenda on Hugo, provide sufficient time for participants to read through ahead of the meeting.
 - Create a meeting note on Hugo for discussion on meeting agenda, sync it to Slack to augment this experience.
     - On Hugo or Slack, participants should write down briefing, information, knowledge, and ideas.
@@ -22,9 +23,9 @@ Guide:
 - Put a tentative timebox on each agenda item.
 
 Tips:
-- Turn off Hugo filter on "Hide meetings with notes" to fit the practice of having pre-meeting notes for discussions.
+- View "All" meetings on Hugo to fit the practice of having pre-meeting notes for discussions.
 
-<img width="323" alt="notes filter" src="https://user-images.githubusercontent.com/2837532/76785553-0a0e1980-678c-11ea-8878-ece9c06c930e.png">
+![all meetings](https://user-images.githubusercontent.com/2837532/76875868-8580d100-6847-11ea-95c8-532b29ea6d6d.png)
 
 - "Import Agenda" can be used as a quick starting point for any meeting note, especially the one used for agenda discussions.
 
