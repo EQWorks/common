@@ -58,6 +58,8 @@ Minimize Distractions: Similar to Slack, instead of striving to achieve "Notific
 
 Documentation - Transparency: Provide as much detail as possible for other team members for context and opt-in to a task or issue if necessary.
 
+If the project makes use of Github Projects, consult the [guides on Projects](github-projects.md)
+
 Opt-out: Leave projects that you are no longer interested in or obligated to.
 
 ## Second line of Communication: Meeting
