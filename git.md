@@ -87,6 +87,30 @@ $ git reset --soft HEAD^
 $ git rebase --continue  # as before
 ```
 
+### Common Pitfall - Inclusion of unwanted commits from a rebase
+If you included commits you didn't want to, this [Q&A on Stackoverflow](https://stackoverflow.com/questions/134882/undoing-a-git-rebase) provide a solution. Example:
+
+The easiest way would be to find the head commit of the branch as it was immediately before the rebase started in the reflog...
+
+```
+git reflog
+```
+and to reset the current branch to it (with the usual caveats about being absolutely sure before reseting with the `--hard` option).
+
+Suppose the old commit was `HEAD@{5}` in the ref log:
+
+```
+git reset --hard HEAD@{5}
+```
+In Windows, you may need to quote the reference:
+
+```
+git reset --hard "HEAD@{5}"
+```
+You can check the history of the candidate old head by just doing a `git log HEAD@{5}` (Windows: `git log "HEAD@{5}"`).
+
+
+
 ### Squash Commits
 
 Squash commits with `git rebase -i` (`i` for interactive), which gives more granular control than `git commit --amend`.
@@ -110,7 +134,7 @@ Followed by a series of commands to edit the commits:
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 ```
-2. edit and replace the key word `pick` with `squash` (or `s`):  
+2. edit and replace the key word `pick` with `squash` (or `s`):
 
 Upon saving, git editor will prompt with the view to edit the commit messages:
 ```bash
@@ -124,9 +148,9 @@ has_aoi - add query to check if each poi could be found in aoi report table
 
 mend
 ```
-Save and exit to complete the squashing.  
+Save and exit to complete the squashing.
 
-3. `git push --force`:  
+3. `git push --force`:
 
 Run `git status` to confirm your changes:
 ```bash
