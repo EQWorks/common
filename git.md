@@ -3,14 +3,14 @@
 ## On Commits
 
 Try to keep each commit message concise, relevant, and _release-notes-ready_:
-- Leverage **first line** as **title**, try to confine it within 50 characters long. This part should be usable for release notes.
+- Leverage the **first line** as the **subject**, try to confine it within 50 characters long. This part should be usable for release notes.
 - Clearly specify if the commit contains breaking changes.
--  Optionally put **lengthier details** in the following **new lines**, as bullet points or paragraphs. They should contain all technical details that are valuable for fellow contributors and reviewers.
+- Optionally put **lengthier details** in the message **body**, as bullet points or paragraphs. They should contain all technical details that are valuable for fellow contributors, reviewers and your-future-selves.
 
-Try to keep each commit as isolated from each other as possible:
+Try to keep each commit's code changes as isolated from each other as possible:
 - Scope closely coupled code changes within a single commit.
-- Special cases such as structural refactors should live in their own commits, and marked so in the commit messages, instead of mixing with feature alteration code changes.
-- On the other hand, when non-impacting minor code changes happen, amend/squash/cherry-pick-squash into relevant commits, instead of forming their own.
+- Special cases such as structural refactors (without feature changes) should live in their own commits, and marked so in the commit messages, instead of mixing with feature alteration code changes.
+- On the other hand, when non-impacting minor code changes happen (such as `console.log`, `debug`, etc.), leverage `--amend`, squash (through interactive rebasing), `cherry-pick` (to pick out and/or re-arrange commit order), or all other available git tools into relevant commits, instead of forming their own.
 
 ### Feature Change Example
 
@@ -59,9 +59,9 @@ builder - v4 POI parameters
 
 ## On Local Development Branches
 
-Try **NOT** to directly commit to `master`. Even if you are the sole maintainer now, there is always the possibility of new members joining.
+Try **NOT** to directly commit to the main branch. Even if you are the sole maintainer now, there is always the possibility of new members joining.
 
-Try to stay up-to-date with the upstream main branch (usually `master`), and also actively perform `git fetch --prune` to clean up idle references.
+Try to stay up-to-date with the upstream main branch, and also actively perform `git fetch --prune` to clean up idle references.
 
 Perform controlled commit amends, squashes, and cherry-picks as much as needed, to maintain a good commit history (see [`On commits`](#on-commits) section) when pushed to upstream.
 
@@ -71,7 +71,7 @@ Name the branch as `scope/change-title`, or if needed, `scope/sub-scope/change-t
 $ git branch
   hub/dataset-flow
 * hub/csv/fix-parsing # contiguously branched off from hub/dataset-flow
-  master
+  main # the main branch of the repo
 ```
 
 ### Common Pitfall - Accidental `git commit` instead of `git rebase --continue`
@@ -168,7 +168,8 @@ Try to maintain a tagging practice that suits the project's release cycle. Adopt
 $ git tag
 v1.2.10
 v1.2.11
-v1.2.11-pre0
+v1.2.11-alpha.0
+v1.2.11-alpha.1
 v1.2.12
 v1.2.7
 v1.2.8
@@ -178,14 +179,14 @@ v1.2.9
 This would allow for some nice tricks to automate tedious tasks, such as listing out commits between tags and/or branch HEADs:
 
 ```bash
-$ git log v1.2.12..master --pretty=oneline --abbrev-commit --author=runzhou.li
+$ git log v1.2.12..HEAD --pretty=oneline --abbrev-commit --author=runzhou.li
 c5f91ec Builder/Hub - prevent actions before WL is chosen
 7461541 Hub - allow multiple (composite) `primary_key`s
 e323208 Hub - deprecate `primary` for `primary_key`
 326cc64 Hub - bug fix of ISO date detected as IP, also:
 ```
 
-This can be very handy for generating (semi-)automated release notes.
+Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [release CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes material.
 
 ## On Pull/Merge Requests
 
