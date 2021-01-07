@@ -7,58 +7,47 @@ Use the guides below as a starting point, and adapt for specific situations acco
 Objectives:
 - Determine the scope and minimum length of the meeting.
 - Give all participants as much context as possible to make an informed decision on RSVP.
-- Gather topics and issues for agenda items that are relevant to the scope of the meeting,
-done either individually or through crowdsourcing to increase accuracy and minimize bias
+- Gather agenda items within the scope of the meeting
 - Asynchronously resolve as many agenda items as possible before the meeting.
 
-Guide:
-- Send a calendar invite to all participants, with Zoom/Hangouts Meet.
-    - [How to use Zoom for meetings](https://docs.google.com/document/d/1WNqeFKXYv_ji_PUXBKq8nlD09ErqmB6VoWasPW-BUDI/edit?usp=sharing).
-- Create a meeting agenda on Hugo, provide sufficient time for participants to read through ahead of the meeting.
-- Create a meeting note on Hugo for discussion on meeting agenda, sync it to Slack to augment this experience.
-    - On Hugo or Slack, participants should write down briefing, information, knowledge, and ideas.
-    - Participants should also raise questions, problems, obstacles, unknowns, and any other types of issues. Try to provide a demonstratable context to them.
-    - Seek to resolve as many issues and directional conflicts as possible.
-- Edit meeting agenda to reflect the outcomes of the discussion meeting note.
-- Put a tentative timebox on each agenda item.
+Guide for Organizers:
+- Send a calendar invite to intended meeting attendees with Zoom/Hangouts Meet.
+    - [How to use Zoom for meetings?](https://docs.google.com/document/d/1WNqeFKXYv_ji_PUXBKq8nlD09ErqmB6VoWasPW-BUDI/edit?usp=sharing)
+- Prepare meeting notes on Hugo, provide as much context as possible. Sync it to a relevant Slack channel to prompt for pre-meeting discussions. ![notes](https://user-images.githubusercontent.com/2837532/103943174-9d3f8380-50ff-11eb-9377-b839d780e10a.png)
+    - Make sure links to all relevant external references (such as Google Docs, Zoom recordings, Zeplin designs, Notion notes, etc.) are comprehensively included in the Hugo notes and make sure that all the participants have access to those.
+- [Tip] Use Hugo's "Import Agenda" feature as a quick starting point for any meeting note, especially the one used for agenda discussions.
 
-Tips:
-- View "All" meetings on Hugo to fit the practice of having pre-meeting notes for discussions.
-
-![all meetings](https://user-images.githubusercontent.com/2837532/76875868-8580d100-6847-11ea-95c8-532b29ea6d6d.png)
-
-- "Import Agenda" can be used as a quick starting point for any meeting note, especially the one used for agenda discussions.
-
-<img width="290" alt="import agenda" src="https://user-images.githubusercontent.com/2837532/76816543-e58b5f00-67d6-11ea-893a-a411a4a24bf8.png">
-
-- Hugo syncs notes discussions as Slack threads (two-way). Participants can freely discuss on either platform.
-
-<img width="562" alt="sync" src="https://user-images.githubusercontent.com/2837532/76794286-0d5dd100-679d-11ea-80b9-2077e2c6ce3f.png">
+Guide for Participants:
+- Go through relevant context, examples (where applicable):
+    - Meeting notes and their associated pre-meeting discussions prepared by the organizer
+    - Summary of pre-meeting discussions through the use of the `/notes` command. ![notes-discussion-summary](https://user-images.githubusercontent.com/2837532/103942564-9bc18b80-50fe-11eb-9c3b-12dde574c43e.png)
+    - Weekly digest (and daily updates) via the [automated updates feed](https://github.com/eqworks/updates). ![updates](https://user-images.githubusercontent.com/2837532/103942697-cb709380-50fe-11eb-8951-116c126e229c.png)
+- Raise questions, proposals, and help resolve issues under the pre-meeting discussion thread. ![discussion](https://user-images.githubusercontent.com/2837532/103943386-feffed80-50ff-11eb-9fdf-16c5cbcfb3f5.png)
 
 ## During A Meeting
 
 Objectives:
-- Align & inform all participants of relevant information at the same time (synchronously)
-- Maintain time for each agenda item & scope of meeting as intended
-- Record as many details as possible for future context/meetings
+- Align & inform all participants of relevant information at the same time (synchronously).
+- Maintain time for each agenda item & scope of meeting as intended.
+- Record as many details as possible for future context/meetings.
 - Crowdsource bookkeeping effort to increase accuracy, and minimize bias.
 
-Guide:
-- Create a new meeting note on Hugo for in-meeting recording and discussions, sync it to Slack to augment this experience.
-- Briefly go over the agenda items and the timebox given for each item.
-- Demonstrate issues, instead of abstractly talking about them.
-- If certain items cannot be resolved within the timebox, record all reasons and context into the in-meeting note and move on.
-- All participants to proactively reply to the in-meeting note to record as much context as possible.
+Guide for Organizers and Participants:
+- Maintain timebox for agenda items.
+- Try to demonstrate issues instead of abstractly talking about them.
+- If certain agenda items cannot be resolved within the timebox, record all reasons and context into the meeting notes or discussion thread.
+- Bookkeep through the same meeting notes (by organizers) or its discussion thread (by participants).
 
 ## After A Meeting
 
 Objectives:
-- Organize meeting notes to be as comprehensive as possible, for both non-participants and future self.
+- Organize meeting notes to be as comprehensive as possible for both non-participants and future self.
 - Determine suitable follow-ups for leftovers.
 - Persist relevant information to a knowledge base.
 
 Guide:
-- Add to the in-meeting note with afterthoughts.
+- Add to the meeting note or its associated discussion thread with afterthoughts.
 - Summarize and derive actionable items from both pre-meeting and in-meeting notes.
-    - Optionally create GitHub issues, Asana tasks, etc., to fit the execution workflow of the relevant team.
-- If the scope of the leftover is too complex, set a time for a follow-up meeting.
+    - Optionally create GitHub issues, Asana tasks, etc.
+    - Utilize the `/notes` slash command to roll up well-formatted content to help with the summarization.
+- Set a time for a follow-up meeting if the scope of the leftover is complex.
