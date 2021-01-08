@@ -11,11 +11,12 @@ Objectives:
 - Asynchronously resolve as many agenda items as possible before the meeting.
 
 Guide for Organizers:
-- Send a calendar invite to intended meeting attendees with Zoom/Hangouts Meet.
-    - [How to use Zoom for meetings?](https://docs.google.com/document/d/1WNqeFKXYv_ji_PUXBKq8nlD09ErqmB6VoWasPW-BUDI/edit?usp=sharing)
-- Prepare meeting notes on Hugo, provide as much context as possible. Sync it to a relevant Slack channel to prompt for pre-meeting discussions. ![notes](https://user-images.githubusercontent.com/2837532/103943174-9d3f8380-50ff-11eb-9377-b839d780e10a.png)
+- Doublecheck the intended attendees to the meeting and ensure they have all received calendar invitations.
+    - *Tip*: [How to use Zoom for meetings?](https://docs.google.com/document/d/1WNqeFKXYv_ji_PUXBKq8nlD09ErqmB6VoWasPW-BUDI/edit?usp=sharing)
+- Initiate a **Meeting Note** on Hugo, provide as much context as possible. Sync it to a relevant Slack channel to prompt for pre-meeting discussions. ![notes-hugo](https://user-images.githubusercontent.com/2837532/104062313-3a65ef00-51c8-11eb-9a0c-005134c16473.png) ![notes-slack-thread](https://user-images.githubusercontent.com/2837532/103943174-9d3f8380-50ff-11eb-9377-b839d780e10a.png)
     - Make sure links to all relevant external references (such as Google Docs, Zoom recordings, Zeplin designs, Notion notes, etc.) are comprehensively included in the Hugo notes and make sure that all the participants have access to those.
-- [Tip] Use Hugo's "Import Agenda" feature as a quick starting point for any meeting note, especially the one used for agenda discussions.
+    - *Tip*: Use Hugo's "New Note" instead of "Prepare" for meeting notes that are shareable to Slack channels that allow synchronized comments and thread replies.
+    - *Tip*: Use Hugo's "Import Agenda" feature as a quick starting point for any meeting note, especially the one used for agenda discussions.
 
 Guide for Participants:
 - Go through relevant context, examples (where applicable):
@@ -47,6 +48,7 @@ Objectives:
 
 Guide:
 - Add to the meeting note or its associated discussion thread with afterthoughts.
+- If applicable, share the session recording to the relevant Slack channel(s).
 - Summarize and derive actionable items from both pre-meeting and in-meeting notes.
     - Optionally create GitHub issues, Asana tasks, etc.
     - Utilize the `/notes` slash command to roll up well-formatted content to help with the summarization.
