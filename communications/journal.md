@@ -4,30 +4,28 @@ Journals don't always need to be like a ["Dear Diary" moment](https://gist.githu
 
 ## Objectives
 
-- Journals help you organize thoughts and recollect memory.
-- They give your teammates more context of where you have been.
-- The evolving plan component offers your teammate insights into the direction you're heading toward.
+- Helps to organize thoughts and recollect memory of daily tasks.
+- Provides teammates with more context of what each other has been working on & gain insights on project direction.
+- Feeds into weekly digests as a part of the meeting notes generation process.
 
 ## Guide
 
-### First Principle - Summarize Last Work Session
+### First Principle - Summarize Last Work Day
 
-The first and most important principle is to write down what you have done in the _Last Work Session_ as comprehensively as possible.
+The first and most important principle is to fill out the _Last Workday_ section as comprehensively as possible. Notes in this section allows others in the team to know what you have been doing, so that more efficient collaboration can be formed from this knowledge. This section is also being sourced into weekly digests we generate for meeting notes, so it is key to keep them clear and concise.
 
-We can be much better at our planning by reinforcing and associating back to what we have done.
-
-This also allows others in the team to know what you have been doing, so that more efficient collaboration can be formed from this knowledge.
+Our [avail_bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal auto-fills _Last Workday_ with completed prev-day tasks, you could review & re-format these notes by directly typing into the Last Workday section.
 
 Adaptations:
 
-- Sessions can be in different lengths, such as every day, every other day, or every week.
-- However, it is better to have consistent session lengths. This allows members in collaboration with you to have a predictable period to check-in with you.
+- We have an automation tool to bring completed prev-day tasks to auto-fill this section.
+- Please edit this section if you find any missing prev-day tasks, or if prev-day tasks were poorly worded.
 
 ### Second Principle - State Current Plan
 
-For the current work session, carry over the leftovers from the last work session as a base and revise.
+Our [avail_bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal carry over the prev-day incompleted tasks to current work day as a base, revise/add to the tasks accordingly.
 
-This allows others in the team to know what you are doing, or about to be doing. This also opens up opportunities for more collaboration and reduces the possibility of crossing over tasks unknowingly, or reinventing wheels unnecessarily.
+Listing out current tasks allows others in the team to know what you are doing, or about to be doing. This also opens up opportunities for more collaboration and reduces the possibility of crossing over tasks unknowingly, or reinventing wheels unnecessarily.
 
 Keep the plan open, as the time ahead isn't 100% predictable, adjust it as you go.
 
@@ -37,11 +35,11 @@ Adaptations:
 
 ## Implementation Guide
 
-One possible implementation is through an Asana project, like below:
+Create your first journal as a task on Asana Dev Journal, and assign the task to yourself, like below:
 
 <img width="1493" alt="asana" src="https://user-images.githubusercontent.com/2837532/76674485-699ad800-6586-11ea-8b5a-53ff36b4ce6d.png">
 
-In it, each team member is responsible to create a "task" that serves as a container to host the summary of _Last Work Session_ (in this exampe, session length = one day) and the _Current Plan_ (in the form of _Subtasks_). _Due date_ is used to indicate when the work session is associated with.
+This self-assigned task on Dev Journal serves as a container to host the summary of _Last Workday_ and _Current Plan_ (in the form of _Subtasks_). _Due date_ is used to indicate when the work session is associated with.
 
 <img width="911" alt="journal" src="https://user-images.githubusercontent.com/2837532/76674353-f47ad300-6584-11ea-84f0-f3a6aba36840.png">
 
@@ -49,11 +47,5 @@ Furthermore, sub-subtasks can be used to further break larger plans/tasks down:
 
 <img width="911" alt="subtask" src="https://user-images.githubusercontent.com/2837532/76674360-03fa1c00-6585-11ea-8c98-47bbcdce1abb.png">
 
-Every day at ~10 AM UTC, a bot script runs to "Mark Complete" for all past "tasks" to shift everyone's attention to the next _work session_.
+**Note**: our automation bot will not carry over the sub-subtasks during the process due to Asana API rate limiting concerns as we loop through the tasks to fetch for its subtasks. Every day at ~10 AM UTC, the bot script also runs to "Mark Complete" for all past "tasks" to shift everyone's attention to the next _work day_.
 
-## Potential Improvements
-
-A bot script may parse through each person's _Last Work Session_ task, to do the following:
-- Create a new _Current Work Session_ task that matches the previous session length.
-- Move the unfinished subtasks as the initial subtasks for the current one
-- Move the finished portion into the _Last Work Session_ field.
