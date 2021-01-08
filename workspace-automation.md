@@ -33,3 +33,21 @@ This commands taps into our AWS Data Pipeline to see its current capacity.
 
 How it looks like in Slack:
 ![/pipeline](https://user-images.githubusercontent.com/2837532/72271944-cf55fc80-35f5-11ea-971c-e75a55148e67.png)
+
+## Asana
+
+Automation on Asana projects is driven by [avail-bot](https://github.com/EQWorks/avail-bot), the bot runs routined workflows to interact with Asana API, and is also the bot that powers methods used behind our slack `/avail` command.
+
+### Dev Avail
+
+Asana Dev Avail project is listed under our Asana Dev team section. This project specifies our teammates' availability for each work day. Availabilities are being categorized as one of `Vacation`, `Remote`, `Office`, or `Not Avail (not able to work)`. Our `avail-bot` will run a daily routine to create & assign an availability task on Dev Avail for every dev, as well as marking them completed when the new cycle begins.
+
+This Project helps to inform teammates of each other's availability status, the statuses could be configured either on Asana or using our slack `/avail` command.
+
+### Dev Journal
+
+Asana Dev Journal project is listed under our Asana Dev team section. This project provides an interface for devs to use as a general journal entry where they would note down their tasks for the day, usually written in to-do format. 
+
+Our `avail-bot` runs a daily routine to create & assign dev-journal tasks for those who uses the journal. This automation formats completed prev-day subtasks into current day's `Last Workday` section, and incompleted prev-day subtasks will be re-created under the current day's subtasks section. This way, devs could could start their work by jumping right into left-over tasks from the previous day, and eliminates the tedious work of copy/paste prev-day taks to format current day's journal.
+
+Dev Journal is a project that helps to inform teammates of what each other is currently working on, providing a general scope of active projects among all teams. These daily updates will also be captured into weekly digests used to generate our meeting notes. Consult our [journal guidelines](https://github.com/EQWorks/common/blob/master/communications/journal.md) for more details.
