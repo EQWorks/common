@@ -38,6 +38,8 @@ Guide for Organizers and Participants:
 - Try to demonstrate issues instead of abstractly talking about them.
 - If certain agenda items cannot be resolved within the timebox, record all reasons and context into the meeting notes or discussion thread.
 - Bookkeep through the same meeting notes (by organizers) or its discussion thread (by participants).
+- Raise questions and additional proposals if time permits.
+    - _Tip_: it's highly _recommended_ to do these [before the meeting](#before-a-meeting).
 
 ## After A Meeting
 
