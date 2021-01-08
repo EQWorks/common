@@ -46,7 +46,7 @@ Objectives:
 - Determine suitable follow-ups for leftovers.
 - Persist relevant information to a knowledge base.
 
-Guide:
+Guide for Organizers and Participants:
 - Add to the meeting note or its associated discussion thread with afterthoughts.
 - If applicable, share the session recording to the relevant Slack channel(s).
 - Summarize and derive actionable items from both pre-meeting and in-meeting notes.
