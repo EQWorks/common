@@ -21,7 +21,7 @@ Guide for Organizers:
 Guide for Participants:
 - Go through relevant context, examples (where applicable):
     - Meeting notes and their associated pre-meeting discussions prepared by the organizer
-    - Summary of pre-meeting discussions through the use of the `/notes` command. ![notes-discussion-summary](https://user-images.githubusercontent.com/2837532/103942564-9bc18b80-50fe-11eb-9c3b-12dde574c43e.png)
+    - Summary of pre-meeting discussions through the use of the [`/notes`](../workspace-automation.md#notes) command. ![notes-discussion-summary](https://user-images.githubusercontent.com/2837532/103942564-9bc18b80-50fe-11eb-9c3b-12dde574c43e.png)
     - Weekly digest (and daily updates) via the [automated updates feed](https://github.com/eqworks/updates). ![updates](https://user-images.githubusercontent.com/2837532/103942697-cb709380-50fe-11eb-8951-116c126e229c.png)
 - Raise questions, proposals, and help resolve issues under the pre-meeting discussion thread. ![discussion](https://user-images.githubusercontent.com/2837532/103943386-feffed80-50ff-11eb-9fdf-16c5cbcfb3f5.png)
 
@@ -53,5 +53,5 @@ Guide for Organizers and Participants:
 - If applicable, share the session recording to the relevant Slack channel(s).
 - Summarize and derive actionable items from both pre-meeting and in-meeting notes.
     - Optionally create GitHub issues, Asana tasks, etc.
-    - Utilize the `/notes` slash command to roll up well-formatted content to help with the summarization.
+    - Utilize the [`/notes`](../workspace-automation.md#notes) slash command to roll up well-formatted content to help with the summarization.
 - Set a time for a follow-up meeting if the scope of the leftover is complex.
