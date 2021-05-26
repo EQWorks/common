@@ -57,6 +57,26 @@ builder - v4 POI parameters
 
 **Tip**: when authoring commit messages, use `git commit -v` to get a comfortable editor environment (of your choice), as well as having the code changes right below for reference.
 
+### Automated Enforcement
+
+If the general commit message (subject line) convention `category[/sub-category] - subject title` is adopted for a given project repository, you can leverage our [`commit-watch` CLI](https://github.com/EQWorks/commit-watch) to perform quick checks. It is especially convenient when integrated into the continuous integration process for pull/merge requests, for example, through GitHub Actions:
+
+```yml
+jobs:
+  # ...other jobs
+  commit-watch:
+    runs-on: ubuntu-latest
+    if: contains(github.event_name, 'pull_request')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - run: npx @eqworks/commit-watch -b ${{ github.event.pull_request.base.sha }} -h ${{ github.event.pull_request.head.sha }} -v
+```
+
 ## On Local Development Branches
 
 Try **NOT** to directly commit to the main branch. Even if you are the sole maintainer now, there is always the possibility of new members joining.
@@ -65,7 +85,7 @@ Try to stay up-to-date with the upstream main branch, and also actively perform 
 
 Perform controlled commit amends, squashes, and cherry-picks as much as needed, to maintain a good commit history (see [`On commits`](#on-commits) section) when pushed to upstream.
 
-Name the branch as `scope/change-title`, or if needed, `scope/sub-scope/change-title` where `scope` depends on convention on a per-project basis. Resist the temptation to bundle out-of-scope commits within it, start new branches for those. If they need to be contiguous to function properly, chain-branch off from the `scope` branch instead of the main branch.
+Name the branch as `scope/change-title`, or if needed, `scope/sub-scope/change-title` where `scope` depends on convention on a per-repository basis. Resist the temptation to bundle out-of-scope commits within it, start new branches for those. If they need to be contiguous to function properly, chain-branch off from the `scope` branch instead of the main branch.
 
 ```bash
 $ git branch
@@ -186,19 +206,19 @@ e323208 Hub - deprecate `primary` for `primary_key`
 326cc64 Hub - bug fix of ISO date detected as IP, also:
 ```
 
-Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [release CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes material.
+Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [`release` CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes material.
 
 ## On Pull/Merge Requests
 
 Try to maintain a good length and depth of the code changes within each request, make it digestible within 30 minutes or less.
 
-Try to keep a [`CHANGELOG`](https://keepachangelog.com)-like summaries of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. This can be automated/semi-automated through good practices [on commits](#on-commits).
+Try to keep a concise summaries of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. A good practices [on commits](#on-commits) helps tremendously on conveying the summary of changes, so rebase/squash/rephrase commits as needed to keep the commit history clean.
 
-Reference and mark relevant issues as fixed (`fixes #123`), or label the request itself when there are no relevant issues -- not both.
+Reference and mark relevant issues as fixed/closed (e.g.: `fixes #123`) when applicable.
 
-Start the request as a draft and/or mark in the title with `[WIP]` prefix when it needs more time to complete. Mark it ready to review, and/or with a `[G2M]` prefix in the title to signal its readiness.
+Start the request as a draft and/or mark in the title with a `[WIP]` prefix when it needs more time to complete. Mark it ready to review, and/or with a `[G2M]` prefix in the title to signal its readiness.
 
-When reviewer approved the PR, it's ready for merge. Three ways to meget it through GitHub:
+When reviewer approved the PR, it's ready for merge. There are three ways to meget it through GitHub:
 
 #### Create a merge commit
 Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
@@ -211,7 +231,7 @@ The relevant commits are all rewritten to be brought on [top of the `HEAD` of th
 
 ## On Reviewing
 
-Try to set aside some quality time as a routine to proactively review others' pull/merge requests, as thoroughly as your bandwidth allows. If there's no time, and/or no willingness, do not just cast approval without reviewing.
+Try to set aside some quality time as a routine to proactively review others' pull/merge requests, as thoroughly as your bandwidth allows. If there's no time, and/or no willingness, do not just cast approve without reviewing. For GitHub repositories, this is the perfect time to make good use of [GitHub's notifcation with a `review-requested` filter](https://github.com/notifications?query=reason%3Areview-requested).
 
 Actively self-review and monitor your own pull/merge requests -- be on the lookout for potential conflicts after other requests have been merged.
 
@@ -219,9 +239,9 @@ When giving code change requests, think twice before you submit -- be reasonable
 
 If the code change suggestion does not warrant definitive reasoning, but would still be constructive in your opinion, make it as a non-blocking comment.
 
-Where relevant, go through the changes in deploy preview or in your local environment to check for UI/UX flow as well as bugs.
+Where applicable, go through the changes in deploy preview or in your local environment to go through intended workflow, and check for potential issues.
 
-Prioritize on reviewing those that marked as bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that it is a well-followed convention in the given project.
+Prioritize on reviewing those that marked as bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that it is a well-followed convention in the given repository.
 
 ## General references
 
