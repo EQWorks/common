@@ -3,14 +3,18 @@
 ## On Commits
 
 Try to keep each commit message concise, relevant, and _release-notes-ready_:
-- Leverage the **first line** as the **subject**, try to confine it within 50 characters long. This part should be usable for release notes.
-- Clearly specify if the commit contains breaking changes.
-- Optionally put **lengthier details** in the message **body**, as bullet points or paragraphs. They should contain all technical details that are valuable for fellow contributors, reviewers and your-future-selves.
+- Leverage the **first line** as the **subject**. Try to confine it within 50 characters long. Aim to make this part usable for release notes.
+- Specify if the commit contains breaking changes.
+- Optionally put **lengthier details** in the message **body**, in the form of bullet points or paragraphs. They should contain all technical information that is valuable for fellow contributors, reviewers, and your future selves.
 
 Try to keep each commit's code changes as isolated from each other as possible:
 - Scope closely coupled code changes within a single commit.
-- Special cases such as structural refactors (without feature changes) should live in their own commits, and marked so in the commit messages, instead of mixing with feature alteration code changes.
-- On the other hand, when non-impacting minor code changes happen (such as `console.log`, `debug`, etc.), leverage `--amend`, squash (through interactive rebasing), `cherry-pick` (to pick out and/or re-arrange commit order), or all other available git tools into relevant commits, instead of forming their own.
+- Exceptional cases such as structural refactor (without feature changes) should live in standalone commits and be marked accordingly in the commit messages instead of mixing with feature alteration code changes.
+- On the other hand, when non-impacting minor code changes happen (such as `console.log`, `debug`, etc.), you can:
+  - Squash through interactive rebasing `git rebase -i`
+  - Squash the current change into the most recent commit through `git commit --amend`
+  - `git cherry-pick` (to pick out or re-arrange commit order)
+  - Or other applicable git commands
 
 ### Feature Change Example
 
@@ -24,7 +28,7 @@ Hub - extend Dataset Flow with JSON parsing
 - `Dropzone` usage restrained from multiple files
 - Extend column data type inference logic to handle non-string values
 
-# 👎 BAD (lack of main feature, and ambiguous phrasing)
+# 👎 BAD (lack of the main feature and ambiguous phrasing)
 add JSON
 ```
 
@@ -34,8 +38,8 @@ add JSON
 # 👍 GOOD
 Hub - no feature change refactor
 
-- Workflow components rewritten using React hooks
-- Hooks factored out to be reusable across different workflows
+- Rewrite workflow components using React hooks
+- Factor out reusable hooks across different workflows
 - Nomenclature changes
 
 # 👎 BAD
@@ -55,17 +59,37 @@ builder (BREAK FO) - v4 POI parameters
 builder - v4 POI parameters
 ```
 
-**Tip**: when authoring commit messages, use `git commit -v` to get a comfortable editor environment (of your choice), as well as having the code changes right below for reference.
+**Tip**: when authoring commit messages, use `git commit -v` to get a comfortable editor environment (of your choice) and have the code changes right below for reference.
+
+### Automated Enforcement
+
+If the general commit message (subject line) convention `category[/sub-category] - subject title` is adopted for a given project repository, you can leverage our [`commit-watch` CLI](https://github.com/EQWorks/commit-watch) to perform quick checks. It is especially convenient when integrated into the continuous integration process for pull/merge requests, for example, through GitHub Actions:
+
+```yml
+jobs:
+  # ...other jobs
+  commit-watch:
+    runs-on: ubuntu-latest
+    if: contains(github.event_name, 'pull_request')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - run: npx @eqworks/commit-watch -b ${{ github.event.pull_request.base.sha }} -h ${{ github.event.pull_request.head.sha }} -v
+```
 
 ## On Local Development Branches
 
-Try **NOT** to directly commit to the main branch. Even if you are the sole maintainer now, there is always the possibility of new members joining.
+Try **NOT** to commit to the main branch directly. Even if you are the sole maintainer now, there is always the possibility of new members joining.
 
-Try to stay up-to-date with the upstream main branch, and also actively perform `git fetch --prune` to clean up idle references.
+Try to stay up-to-date with the main upstream branch and actively perform `git fetch --prune` to clean up idle references.
 
-Perform controlled commit amends, squashes, and cherry-picks as much as needed, to maintain a good commit history (see [`On commits`](#on-commits) section) when pushed to upstream.
+Perform controlled commit amends, squashes, and cherry-picks as much as needed to maintain a good commit history (see [`On commits`](#on-commits) section) before pushing to upstream.
 
-Name the branch as `scope/change-title`, or if needed, `scope/sub-scope/change-title` where `scope` depends on convention on a per-project basis. Resist the temptation to bundle out-of-scope commits within it, start new branches for those. If they need to be contiguous to function properly, chain-branch off from the `scope` branch instead of the main branch.
+Name the branch as `scope/change-title`, or if needed, `scope/sub-scope/change-title` where `scope` depends on a convention on a per-repository basis. Please resist the temptation to bundle out-of-scope commits within each branch. Chain-branch off from the `scope` branch instead of the main branch when functionality requires contiguous commits to work correctly.
 
 ```bash
 $ git branch
@@ -76,7 +100,7 @@ $ git branch
 
 ### Common Pitfall - Accidental `git commit` instead of `git rebase --continue`
 
-An [Q&A on Stackoverflow](https://stackoverflow.com/questions/6457044/forgot-git-rebase-continue-and-did-git-commit-how-to-fix) covers this very case. In short:
+A [Q&A on Stackoverflow](https://stackoverflow.com/questions/6457044/forgot-git-rebase-continue-and-did-git-commit-how-to-fix) covers this very case. In short:
 
 ```bash
 # It moves the HEAD pointer to its parent but keeps the work tree
@@ -88,14 +112,15 @@ $ git rebase --continue  # as before
 ```
 
 ### Common Pitfall - Inclusion of unwanted commits from a rebase
-If you included commits you didn't want to, this [Q&A on Stackoverflow](https://stackoverflow.com/questions/134882/undoing-a-git-rebase) provide a solution. Example:
+If you included commits you didn't want to, this [Q&A on Stackoverflow](https://stackoverflow.com/questions/134882/undoing-a-git-rebase) would provide a solution. Example:
 
-The easiest way would be to find the head commit of the branch as it was immediately before the rebase started in the reflog...
+The easiest way would be to find the head commit of the branch as it was immediately before the rebase started in the reflog:
 
 ```
 git reflog
 ```
-and to reset the current branch to it (with the usual caveats about being absolutely sure before reseting with the `--hard` option).
+
+And to reset the current branch to it (with the usual caveats about being sure before resetting with the `--hard` option).
 
 Suppose the old commit was `HEAD@{5}` in the ref log:
 
@@ -107,7 +132,8 @@ In Windows, you may need to quote the reference:
 ```
 git reset --hard "HEAD@{5}"
 ```
-You can check the history of the candidate old head by just doing a `git log HEAD@{5}` (Windows: `git log "HEAD@{5}"`).
+
+You can check the history of the candidate's old head by just doing a `git log HEAD@{5}` (Windows: `git log "HEAD@{5}"`).
 
 
 
@@ -119,9 +145,10 @@ Example:
 1. `git rebase -i HEAD~3` brings 3 commits from and including `HEAD`:
 
 ```bash
-pick 6df9b94 has_aoi - add query to check if each poi could be found in aoi report table - if yes/no: response will include has_aoi flag indicating true/false
+pick 6df9b94 has_aoi - add a query to check if there are associated POIs in the AOI report table
+- responses will include a `has_aoi` flag indicating true/false
 pick 6d9075c mend
-pick 95e9ccd report_vwi - add has_aoi query logic to vwi reports
+pick 95e9ccd report_vwi - add has_aoi query logic to VWI reports
 ```
 Followed by a series of commands to edit the commits:
 ```bash
@@ -134,15 +161,15 @@ Followed by a series of commands to edit the commits:
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 ```
-2. edit and replace the key word `pick` with `squash` (or `s`):
+2. edit and replace the keyword `pick` with `squash` (or `s`):
 
 Upon saving, git editor will prompt with the view to edit the commit messages:
 ```bash
 # This is a combination of 2 commits.
 # This is the 1st commit message:
 
-has_aoi - add query to check if each poi could be found in aoi report table
-- if yes/no: response will include has_aoi flag indicating true/false
+has_aoi - add a query to check if there are associated POIs in the AOI report table
+- responses will include a `has_aoi` flag indicating true/false
 
 # This is the commit message #2:
 
@@ -176,7 +203,7 @@ v1.2.8
 v1.2.9
 ```
 
-This would allow for some nice tricks to automate tedious tasks, such as listing out commits between tags and/or branch HEADs:
+This tagging convention would allow for some nice tricks to automate tedious tasks, such as listing out commits between tags and branch HEADs:
 
 ```bash
 $ git log v1.2.12..HEAD --pretty=oneline --abbrev-commit --author=runzhou.li
@@ -186,46 +213,52 @@ e323208 Hub - deprecate `primary` for `primary_key`
 326cc64 Hub - bug fix of ISO date detected as IP, also:
 ```
 
-Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [release CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes material.
+Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [`release` CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes material.
 
 ## On Pull/Merge Requests
 
-Try to maintain a good length and depth of the code changes within each request, make it digestible within 30 minutes or less.
+Try to maintain a good length and depth of the code changes within each request (digestible within 30 minutes or less for the reviewers).
 
-Try to keep a [`CHANGELOG`](https://keepachangelog.com)-like summaries of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. This can be automated/semi-automated through good practices [on commits](#on-commits).
+Try to keep a concise summary of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. Good practices [on commits](#on-commits) help tremendously for summary, so rebase/squash/rephrase commits as needed to keep the commit history clean.
 
-Reference and mark relevant issues as fixed (`fixes #123`), or label the request itself when there are no relevant issues -- not both.
+Reference and mark relevant issues as fixed/closed (e.g., `fixes #123`) when applicable.
 
-Start the request as a draft and/or mark in the title with `[WIP]` prefix when it needs more time to complete. Mark it ready to review, and/or with a `[G2M]` prefix in the title to signal its readiness.
+Start the request as a draft or mark in the title with a `[WIP]` prefix when it needs more time to complete. Then, mark it ready to review or with a `[G2M]` prefix in the title to signal its readiness.
 
-When reviewer approved the PR, it's ready for merge. Three ways to meget it through GitHub:
+When reviewers approve the PR, it's ready for merging. There are three ways to merge it through GitHub:
 
-#### Create a merge commit
-Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge) -- this gives a good indicator (the merge commit) of the bundling of code change commits. Also, the commit history and its timeline are [fully preserved](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=le).
+### Create a merge commit
 
-#### Squash and merge
+Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_merge) gives a good indicator (the merge commit) of the bundling of code change commits. Also, merging with a merge commit preserves the commit history and its timeline.
+
+![merge commit](https://user-images.githubusercontent.com/2837532/121074564-09531000-c7a2-11eb-8a56-39e238ab4b1c.png)
+
+
+### Squash and merge
+
 **TRY NOT TO SQUASH MERGE.**
 
-#### Rebase and merge
-The relevant commits are all rewritten to be brought on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). That means the commit history and its timeline _can be_ altered. In return, you gain a full block of commits that represent intended code changes next to each other.
+### Rebase and merge
+
+The relevant commits are all rewritten to be on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). The rebase action can alter the commit history and its timeline. In return, you gain a whole block of commits that represent intended code changes next to each other.
 
 ## On Reviewing
 
-Try to set aside some quality time as a routine to proactively review others' pull/merge requests, as thoroughly as your bandwidth allows. If there's no time, and/or no willingness, do not just cast approval without reviewing.
+Try to set aside some quality time as a routine to proactively review others' pull/merge requests as thoroughly as your bandwidth allows. If there's no time or no willingness, do not just approve without reviewing; defer it to some other time or other teammates. You may utilize [GitHub's notification with a `review-requested` filter](https://github.com/notifications?query=reason%3Areview-requested) for applicable GitHub-hosted repositories.
 
-Actively self-review and monitor your own pull/merge requests -- be on the lookout for potential conflicts after other requests have been merged.
+Actively self-review and monitor your own pull/merge requests -- be on the lookout for potential conflicts after merging other pull requests.
 
-When giving code change requests, think twice before you submit -- be reasonable and constructive, and be ready to defend your reasons.
+When giving code change requests, think twice before submitting -- be reasonable and constructive, and be ready to defend your reasons.
 
-If the code change suggestion does not warrant definitive reasoning, but would still be constructive in your opinion, make it as a non-blocking comment.
+If the code change suggestion does not warrant definitive reasoning but still be constructive in your opinion, make it a non-blocking comment.
 
-Where relevant, go through the changes in deploy preview or in your local environment to check for UI/UX flow as well as bugs.
+Where applicable, go through the changes in deploy preview or your local environment to go through the intended workflow, and check for potential issues.
 
-Prioritize on reviewing those that marked as bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that it is a well-followed convention in the given project.
+Prioritize on reviewing bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that the PR prefix is a well-followed convention in the given repository.
 
 ## General references
 
 - [GitHub article on merge methods](https://help.github.com/en/articles/about-merge-methods-on-github)
 - [Git documentation on merge](https://git-scm.com/docs/git-merge)
-- [Atlassian article on Merging vs Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [Atlassian article on Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 - [VS Code as Git editor](https://code.visualstudio.com/docs/editor/versioncontrol#_vs-code-as-git-editor)
