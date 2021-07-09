@@ -256,8 +256,19 @@ Where applicable, go through the changes in deploy preview or your local environ
 
 Prioritize on reviewing bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that the PR prefix is a well-followed convention in the given repository.
 
-## General references
+## Migrating commits to a new repository
+Occasionally, a feature or component will mature to the extent that it should be given its own repository. In this case, "splitting up" the existing repository is desired to extract the matured feature.
 
+Rather than copy-pasting code from the parent repository into a new one, it is preferable to retain the relevant commit history.
+
+So, the "split" should be done in such a way that the new repository contains only the desired files, and its commit history contains only the commits that have affected those files.  
+
+This can be accomplished with either of the following approaches:
+*  `git filter-branch -f --index-filter` as described in [this pull request](https://github.com/EQWorks/lumen-ui/pull/1) works well if you have a specific list of files and directories you would like to clone.   
+* `git subtree split -P` as described in [this Stack Overflow answer](https://stackoverflow.com/questions/28357056/partial-git-clone-with-relevant-history) works well if the desired files constitute a single subdirectory, as the `-P` option denotes "prefix".
+
+---
+## General References
 - [GitHub article on merge methods](https://help.github.com/en/articles/about-merge-methods-on-github)
 - [Git documentation on merge](https://git-scm.com/docs/git-merge)
 - [Atlassian article on Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
