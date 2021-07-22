@@ -1,59 +1,40 @@
+# Common Guidelines
+
 # Communications
 
 ## General guidelines
 
-Communication is critical in any organization but in doing so, we want to ensure that we are considerate of other people's production processes and time. Therefore, the focus should be on real problem solving and creative endeavors instead of drowning oneself in processes and tools when communicating with one another.
+Communication is critical in any organization. We want to ensure that we are considerate of other people's production processes and time.
 
-## First line of Communication: Texting
+Effective communication should achieve the purpose of unblocking others and mitigate potential blocks from others. The focus should be on actual problem solving and creative endeavours instead of drowning oneself in methods and tools when communicating.
 
-We use a few tools to help team members communicate with one another: Slack, G Suite and Asana. Before you decide to have a face-to-face or voice/video conference, take some time to organize your thoughts, and write them down. Revise it to be as concise as possible. If it's not urgently blocking all of your next tasks, use Slack, Gmail or Asana to contact another team member asynchronously (in an intermittent manner).
+## Tools
 
-Budget communication time. Try to allocate yourself a relatively fixed schedule to initiate, check and respond to messages. To a certain extent, this means try to optimize for the whole block of contiguous time that suits better for your job (knowledge-based, creative endeavors).
+We use an evolving set of tools to facilitate communication. Notably, we use **Slack**, **GitHub,** **Google Workspace**, **Hugo**, Discord, Notion, and Asana. The ones in **bold text** are today's staple tools that cover the majority of the team members.
 
-#### - Internal & External Messaging Tool: Slack -
+We also actively look for opportunities to automate workflows and eliminate or minimize tedious and error-prone processes by integrating tools primarily channelled into the most adopted platform, **Slack**.
 
-Asynchronous Communication by Default: Whenever you want to communicate with others, default to an asynchronous way by sending a text message. By doing so, you respect your coworker's time and their productivity and the fact that they may be in a meeting or focusing on a task and should not be interrupted.
+**In principle:** We adopt, utilize, and adapt tools and workflows to be productive. Learn the tools, make the tools serve us. Do not drown in them and sacrifice actual productivity.
 
-It’s hard to keep up with every channel update on top of your direct messages and mentions. Instead, we have a few [chief mechanisms](slack.md) to help with the overwhelming feeling of too many notifications and to aid in persisting and making accessible valuable company information.
+## Asynchronous and Transparent Communication by Default
 
-#### - Internal & External Communication Tool: Gmail -
+Whenever you want to communicate with others, default to an asynchronous way (e.g., Slack, GitHub, Notion). By doing so, you respect others' time and productivity and the fact that they may not want to be interrupted. Use Slack channels/threads, GitHub projects/issues, Notion pages, Asana tasks, or emails to coordinate with other team members asynchronously.
 
-Minimize Distractions: A busy email inbox is a contributing factor to interruptions. Instead of striving to achieve "Inbox Zero", try to be as close as possible to "Everything Zero". This means diligently clear or defer any information that is not work-related. You may do the following:
+At the same time, adopt more transparent ways to communicate. For example, on Slack, instead of direct messaging, utilize more channels and threads. This way, we retain these communications as a raw form of documentation and references that we can search, recollect, and share/reuse.
 
-- Pin/star items that need future attention. Archive them as soon as they're done, or no longer needed.
-- Optionally snooze items that need future attention. Archive them as soon as they're done, or no longer needed.
-- Archive the rest.
+**In principle:** resort to **asynchronous** and **transparent** communications by default, unless:
 
-Opt-out: Use filters to avoid receiving emails sent to a shared email address that you are not interested in.
+- The communication is not related to work (e.g., your weekend trip. Although we encourage these joyful times to be shared for all too)
+- The communication involves secrets (e.g., database credentials)
 
-#### - Project Management & Product Issue Documentation: Asana -
+## Synchronous Communication when Needed
 
-Opt-in: Join projects that you are interested in or obligated to.
+When it is more productive to conduct in a more synchronous manner of communication, such as meetings, be mindful and treat meetings as scarce resources to be treasured as they involve the collective productivity value of all its participants during the time of synchronous communication.
 
-Minimize Distractions: Similar to Slack, instead of striving to achieve "Notification Zero", try to be as close as possible to "Everything Zero". Defer any information that is not work-related
+**In principle:** Engage in synchronous communications, such as meetings, when necessary. When meetings are needed, consult the [guides on meetings](./meetings.md) to make the most out of them.
 
-Documentation - Transparency: Provide as much detail as possible for other team members for context and opt-in to a task or issue if necessary.
+## Tips
 
-If the project makes use of Github Projects, consult the [guides on Projects](github-projects.md)
+**Budget communication time:** Try to adopt a working schedule to initiate, check and respond to communications. To a certain extent, this means try to optimize for the whole block of contiguous time that suits you better for your job and your working style.
 
-Opt-out: Leave projects that you are no longer interested in or obligated to.
-
-## Second line of Communication: Meeting
-
-Meetings can be used to address the following:
-
-- Relaying updates & information about your project/work.
-- Seeking feedback about an idea/concept/topic.
-- Asking questions.
-
-Each meeting is the collective productivity value of all its participants so if a meeting is necessary, consult the [guides on meetings](meetings.md)
-
-## General references
-
-A lot of above were derived or borrowed from the following:
-
-- [Rework](https://www.amazon.ca/Rework-Jason-Fried/dp/0307463745) and [Remote](https://www.amazon.ca/Remote-Office-Required-Jason-Fried/dp/0804137501) - books, by Jason Fried, David Heinemeier Hansson.
-- [Optimize for Happiness](http://tom.preston-werner.com/2010/10/18/optimize-for-happiness.html) - talk/blog post, by Tom Preston-Werner.
-- [How GitHub Works](https://zachholman.com/posts/how-github-works/) - talk/blog posts, by Zach Holman.
-- [Re-Imagining Work](https://www.youtube.com/watch?v=G11t6XAIce0&list=PL39BF9545D740ECFF&index=4) - RSA talk, by Dave Coplin.
-- [Maker's Schedule, Manager's Schedule](http://www.paulgraham.com/makersschedule.html) - blog post, by Paul Graham.
+**Minimize distractions:** It's hard to keep up with all fronts of these communication tools. Instead, take time to learn how to configure them to suit your needs and working style. We have a few [example mechanisms](./slack.md) to help with the overwhelming feeling of too many notifications and aid in persisting and making accessible, valuable company information.
