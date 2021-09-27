@@ -28,7 +28,12 @@ Depending on the role, the work sample becomes an organic filter based on:
 * Applicants' philosophy on whether they prefer this type of "take-home" work sample or in-person whiteboard brainteasers. We don't try to cater to everyone, and we adopted the former
 * An asynchronous way from the get-go, as the way we encourage our teams [to communicate](communications/README.md)
 
-As a result, we save a considerable amount of time scanning through résumés and other references, thus minimizing the human bias factor.
+As a result, we save a considerable amount of time scanning through résumés and other references, thus minimizing the human bias factor. For instance, in one of our roles, the historic hiring pipeline looks like below:
+
+![pipeline](https://user-images.githubusercontent.com/2837532/134993142-c86ead5b-ffe9-4a6b-92c6-8c0ee21a1387.png)
+<small>(Note: the eight applicants that did not make it into the "Work Sample" stage was due to the closure of the job posting altogether as we filled the role at the time)</small>
+
+The roughly less than 10% stats on applicants who submit their work sample solutions (thus moved to the "Review" stage) remain mostly true across all our roles.
 
 Besides, being objective allows us to naturally achieve workspace diversity without artificially applying discriminative controls, as we provide equal opportunity for all applicants from the top.
 
