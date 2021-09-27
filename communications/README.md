@@ -1,5 +1,3 @@
-# Common Guidelines
-
 # Communications
 
 ## General guidelines
