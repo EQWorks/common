@@ -1,0 +1,24 @@
+name: Tag release
+
+on:
+  push:
+    tags:
+      - 'v*' # proceeds eg: v1.0
+      - '!v*-*' # skips eg: v1.2.99-beta1, v3.5.0-test, etc.
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Generate tag associated release changelog
+        if: ${{ success() }}
+        run: npx @eqworks/release changelog -v --head ${GITHUB_REF##*/} --github --skip alpha
+        env:
+          GITHUB_OWNER: EQWorks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
