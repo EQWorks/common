@@ -16,9 +16,9 @@ In [this section](hiring.md), we discuss our hiring principles and supporting me
 
 ### [📝 &nbsp;Communications](communications/README.md)
 
-In [this section](communications/README.md), we discuss our principle of by default being asynchronous and transparent communications while embracing the necessity of synchronous communications and providing [supporting guidelines](communications/meetings.md) to make them more efficient.
+[This section](communications/README.md) focuses on the principle of asynchronous and transparent communications while embracing the necessity of synchronous communications and providing [supporting guidelines](communications/meetings.md) to make them more efficient.
 
-We also have guides on [Slack](communications/slack.md), [GitHub projects](communications/github-projects.md), and [journaling](communications/journal.md) that embrace the core principle of effective communications in asynchronous and transparent manners.
+We also have guides on [Slack](communications/slack.md), [GitHub projects](communications/github-projects.md), and [journaling](communications/journal.md) based on the core principle of effective communications in asynchronous and transparent manners.
 
 ### [🤖 &nbsp;Automation](automation.md)
 
