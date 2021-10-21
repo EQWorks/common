@@ -20,7 +20,7 @@ In [this section](communications/README.md), we discuss our principle of by defa
 
 We also have guides on [Slack](communications/slack.md), [GitHub projects](communications/github-projects.md), and [journaling](communications/journal.md) that embrace the core principle of effective communications in asynchronous and transparent manners.
 
-### [🤖 &nbsp;Workspace Automation](workspace-automation.md)
+### [🤖 &nbsp;Automation](automation.md)
 
 The various automation tools and workflows we build to sustain and synergize with our conventions and principles.
 
