@@ -4,7 +4,7 @@ Journals don't always need to be like a ["Dear Diary" moment](https://gist.githu
 
 ## Objectives
 
-- Helps to organize thoughts and recollect memory of daily tasks.
+- Helps to organize thoughts and the recollection of daily tasks.
 - Provides teammates with more context of what each other has been working on & gain insights on project direction.
 - Feeds into weekly digests as a part of the meeting notes generation process.
 
@@ -14,39 +14,30 @@ Journals don't always need to be like a ["Dear Diary" moment](https://gist.githu
 
 _Last Workday_ is a custom field in the journal:
 
-<img width="903" alt="Screen Shot 2021-01-08 at 4 57 20 PM" src="https://user-images.githubusercontent.com/50936670/104070132-24f6c200-51d4-11eb-9ff1-177fec31b192.png">
+<img width="799" alt="Screen Shot 2021-10-21 at 5 42 44 PM" src="https://user-images.githubusercontent.com/50936670/138361226-5ec0a1e6-d283-4ba0-b3ee-558d7f875ca1.png">
 
-Notes in this section allows others in the team to know what you have been doing, so that more efficient collaboration can be formed from this knowledge. This section is also being sourced into weekly digests we generate for meeting notes, so it is key to keep them clear and concise.
+Notes in this section allow others in the team to know what you have been doing, and this knowledge can form more efficient collaboration. Daily and Weekly digests, powered by [updates](https://github.com/EQWorks/updates) that generate meeting notes also source from this section, so keeping them clear and concise is critical.
 
-Our [avail-bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal auto-fills _Last Workday_ with completed prev-day tasks, please edit this section if you find any missing prev-day tasks, or if prev-day tasks were poorly worded. You could revise these notes by directly typing into the Last Workday section.
+Our [avail-bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal auto-fills _Last Workday_ with completed prev-day tasks. Please edit this section if you find any missing prev-day tasks or if they were poorly worded. You could revise these notes by directly typing them into the Last Workday section.
 
 ### (2) State Current Plan
 
-State current plan as Subtasks, which could be marked as complete as you progress:
+State current plan as Subtasks. These subtasks then can be marked as completed as you progress:
 
-<img width="893" alt="Screen Shot 2021-01-08 at 5 05 42 PM" src="https://user-images.githubusercontent.com/50936670/104070164-3a6bec00-51d4-11eb-8898-c82077428d01.png">
+<img width="948" alt="Screen Shot 2021-10-21 at 5 45 50 PM" src="https://user-images.githubusercontent.com/50936670/138361544-cb110acb-f579-4635-b151-e193f6e39d22.png">
 
-Our [avail-bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal carry over the prev-day incompleted tasks to current work day as a base, revise/add to the tasks accordingly.
+Our [avail-bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal takes over the prev-day incompleted tasks to the current workday as the base template, revise/add to the list accordingly.
 
-Listing out current tasks allows others in the team to know what you are doing, or about to be doing. This also opens up opportunities for more collaboration and reduces the possibility of crossing over tasks unknowingly, or reinventing wheels unnecessarily.
+Listing out current tasks allows others in the team to know what you are doing or about to be doing. This knowledge opens up opportunities for more collaboration, and it also reduces the possibility of crossing over tasks unknowingly or reinventing wheels unnecessarily.
 
-Try to break your plan down to smaller todos whenever possible. Keep the plan open, as the time ahead isn't 100% predictable, adjust it as you go.
+Try to break your plan down to smaller todos whenever possible. Keep the plan open, as the time ahead isn't 100% predictable; adjust it as you go.
 
 ## Implementation Guide
 
-Create your first journal as a task on Asana Dev Journal, and assign the task to yourself, like below:
+Create your first journal as a page on Notion Dev Journal, and title the page with your name. Your journal page will appear alongside the journal pages of your teammates, like below:
 
-<img width="1493" alt="asana" src="https://user-images.githubusercontent.com/2837532/76674485-699ad800-6586-11ea-8b5a-53ff36b4ce6d.png">
+<img width="1275" alt="Screen Shot 2021-10-21 at 5 37 59 PM" src="https://user-images.githubusercontent.com/50936670/138360595-d3c7ac98-dc0b-4793-97ba-979297de4214.png">
 
-This self-assigned task on Dev Journal serves as a container to host the summary of _Last Workday_ and _Current Plan_ (in the form of _Subtasks_). _Due date_ is used to indicate when the work session is associated with.
+These pages on Dev Journal serves as a container to host the summary of _Last Workday_ and _Current Plan_ (in the form of _Subtasks_). Assign the page to yourself on the _Assignee_ field. The _Date_ field indicates the associated work session. The _Idle_ field will range from 1-5. The _Idle_ count will initiate if the prev-workday has no completed subtasks, and the count will increase on consecutive days of no activity. After five days of inactivity, the bot will no longer auto-create your journals.
 
-<img width="911" alt="journal" src="https://user-images.githubusercontent.com/50936670/104071173-99cafb80-51d6-11eb-9869-409de5d225b1.png">
-
-Furthermore, sub-subtasks can be used to further break larger plans/tasks down:
-
-<img width="911" alt="subtask" src="https://user-images.githubusercontent.com/50936670/104070826-c9c5cf00-51d5-11eb-80b1-a2c27d81e263.png">
-
-**Note**:
-- Our automation bot will not carry over the sub-subtasks during the process due to Asana API rate limiting concerns as we loop through the tasks to fetch for its subtasks.
-- Every day at ~10 AM UTC, the bot script also runs to "Mark Complete" for all past "tasks" to shift everyone's attention to the next _work day_.
-
+<img width="1349" alt="Screen Shot 2021-10-21 at 5 41 18 PM" src="https://user-images.githubusercontent.com/50936670/138506773-8879a2ad-f5ea-4eee-b4c6-22b610c02bf4.png">
