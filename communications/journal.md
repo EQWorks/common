@@ -4,7 +4,7 @@ Journals don't always need to be like a ["Dear Diary" moment](https://gist.githu
 
 ## Objectives
 
-- Helps to organize thoughts and recollect the memory of daily tasks.
+- Helps to organize thoughts and the recollection of daily tasks.
 - Provides teammates with more context of what each other has been working on & gain insights on project direction.
 - Feeds into weekly digests as a part of the meeting notes generation process.
 
@@ -40,4 +40,4 @@ Create your first journal as a page on Notion Dev Journal, and title the page wi
 
 These pages on Dev Journal serves as a container to host the summary of _Last Workday_ and _Current Plan_ (in the form of _Subtasks_). Assign the page to yourself on the _Assignee_ field. The _Date_ field indicates the associated work session. The _Idle_ field will range from 1-5. The _Idle_ count will initiate if the prev-workday has no completed subtasks, and the count will increase on consecutive days of no activity. After five days of inactivity, the bot will no longer auto-create your journals.
 
-<img width="1349" alt="Screen Shot 2021-10-21 at 5 41 18 PM" src="https://user-images.githubusercontent.com/50936670/138362370-3915b1a8-a485-4032-94d3-bd3ce210eaf4.png">
+<img width="1349" alt="Screen Shot 2021-10-21 at 5 41 18 PM" src="https://user-images.githubusercontent.com/50936670/138506773-8879a2ad-f5ea-4eee-b4c6-22b610c02bf4.png">
