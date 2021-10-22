@@ -1,12 +1,12 @@
 # Common
 
-Our evolving handbook, based on common philosophies and practices, to groom good work culture and environment.
+Our living handbook is based on common philosophies and practices to create a positive work culture and environment.
 
 For new or prospective members, this handbook is for you to understand how to be a part of the organization, contribute productively, grow, and enjoy.
 
 For existing members, this handbook is for you to refer, re-examine, and suggest revisions to morph it into a better shape that suits the ever-evolving meta and dynamics.
 
-We actively absorb and adapt valuable bits and pieces from [references by other individuals and organizations](references.md).
+We actively absorb and adopt valuable bits and pieces from [references by other individuals and organizations](references.md).
 
 ## General
 
@@ -16,7 +16,7 @@ In [this section](hiring.md), we discuss our hiring principles and supporting me
 
 ### [📝 &nbsp;Communications](communications/README.md)
 
-[This section](communications/README.md) focuses on the principle of asynchronous and transparent communications while embracing the necessity of synchronous communications and providing [supporting guidelines](communications/meetings.md) to make them more efficient.
+[This section](communications/README.md) focuses on the principle of prioritizing asynchronous and transparent communications while embracing the necessity of synchronous communications and providing [supporting guidelines](communications/meetings.md) to make them more efficient.
 
 We also have guides on [Slack](communications/slack.md), [GitHub projects](communications/github-projects.md), and [journaling](communications/journal.md) based on the core principle of effective communications in asynchronous and transparent manners.
 
