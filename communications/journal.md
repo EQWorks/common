@@ -16,7 +16,7 @@ _Last Workday_ is a custom field in the journal:
 
 <img width="799" alt="Screen Shot 2021-10-21 at 5 42 44 PM" src="https://user-images.githubusercontent.com/50936670/138361226-5ec0a1e6-d283-4ba0-b3ee-558d7f875ca1.png">
 
-Notes in this section allow others in the team to know what you have been doing, and this knowledge can form more efficient collaboration. Daily and Weekly digests, powered by [updates](https://github.com/EQWorks/updates) that generate meeting notes also source from this section, so keeping them clear and concise is critical.
+Notes in this section allow team members to know what you have been working on for better collaboration. Daily and weekly digests, powered by [updates](https://github.com/EQWorks/updates) that generate meeting notes also sourced from this section, so keeping them clear and concise is critical.
 
 Our [avail-bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal auto-fills _Last Workday_ with completed prev-day tasks. Please edit this section if you find any missing prev-day tasks or if they were poorly worded. You could revise these notes by directly typing them into the Last Workday section.
 
@@ -28,9 +28,9 @@ State current plan as Subtasks. These subtasks then can be marked as completed a
 
 Our [avail-bot](https://github.com/EQWorks/avail-bot) routine for Dev Journal takes over the prev-day incompleted tasks to the current workday as the base template, revise/add to the list accordingly.
 
-Listing out current tasks allows others in the team to know what you are doing or about to be doing. This knowledge opens up opportunities for more collaboration, and it also reduces the possibility of crossing over tasks unknowingly or reinventing wheels unnecessarily.
+Listing out current tasks updates teammates on what projects you are currently working on or about to start. This knowledge opens up opportunities for more collaboration, and it also reduces the possibility of crossing over tasks unknowingly or reinventing wheels unnecessarily.
 
-Try to break your plan down to smaller todos whenever possible. Keep the plan open, as the time ahead isn't 100% predictable; adjust it as you go.
+Try to break your plan down to smaller to-dos whenever possible. Keep the plan open, as the time ahead isn't 100% predictable; adjust it as you go.
 
 ## Implementation Guide
 
