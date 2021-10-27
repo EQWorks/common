@@ -10,6 +10,14 @@ We actively absorb and adopt valuable bits and pieces from [references by other 
 
 ## General
 
+### [🤔 &nbsp;Decision-making](decision-making.md)
+
+[This section](decision-making.md) introduces our principles for decision-making, which serve as the foundation for our work culture.
+
+We encourage decision-making in a round-table manner through grassroots meritocracy.
+
+In turn, this promotes a culture of open-mindedness, helps us adapt to the changing world, and sustains longevity to our members and the organization.
+
 ### [🔍 &nbsp;Hiring](hiring.md)
 
 In [this section](hiring.md), we discuss our hiring principles and supporting methods.
