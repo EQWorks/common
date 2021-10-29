@@ -18,6 +18,12 @@ We encourage decision-making in a round-table manner through grassroots meritocr
 
 In turn, this promotes a culture of open-mindedness, helps us adapt to the changing world, and sustains longevity to our members and the organization.
 
+### [🪐 &nbsp;Structure](structure.md)
+
+Our [organization structure](structure.md) derives from the open-source community and practices, which bears the characteristics of being flat, fluid, and distributed.
+
+The structure is a natural fit for making decisions and maximizing our collective value, happiness, productivity, and innovation. Matters irrelevant to accomplishing objectives such as "where one must be to work" are not a concern (one should work where they prefer to be.)
+
 ### [🔍 &nbsp;Hiring](hiring.md)
 
 In [this section](hiring.md), we discuss our hiring principles and supporting methods.
