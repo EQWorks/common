@@ -20,9 +20,9 @@ In turn, this promotes a culture of open-mindedness, helps us adapt to the chang
 
 ### [🪐 &nbsp;Structure](structure.md)
 
-Our [organization structure](structure.md) derives from the open-source community and practices, which bears the characteristics of being flat, fluid, and distributed.
+Our [organization structure](structure.md) derives from the open-source community and practices, characterized by being flat, fluid, and distributed.
 
-The structure is a natural fit for making decisions and maximizing our collective value, happiness, productivity, and innovation. Matters irrelevant to accomplishing objectives such as "where one must be to work" are not a concern (one should work where they prefer to be.)
+The structure is a natural fit for making decisions and maximizing our collective value, happiness, productivity, and innovation. Where you live and where you call home for life or just for the moment is your personal preference and part of what makes you a happy, contributing member of the team and is of little concern to us.
 
 ### [🔍 &nbsp;Hiring](hiring.md)
 
