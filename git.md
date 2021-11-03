@@ -20,11 +20,18 @@ Try to keep each commit's code changes as isolated from each other as possible:
 
 ```COMMIT_EDITMSG
 # 👍 GOOD
-# Title line, release notes ready
+# Subject title line, concise and informative
 Hub - extend Dataset Flow with JSON parsing
 
-# Detail lines, technical for contributors and reviewers
+# Body detail lines, technical for contributors and reviewers
+# Note it's necessary to keep an empty line between the subject and body lines
 - `FileReader` based JSON parser, with API emulated as Papaparse's
+
+    const reader = new FileReader()
+    reader.onloadend = () => {
+      setPreviewURL(reader.result)
+    }
+
 - `Dropzone` usage restrained from multiple files
 - Extend column data type inference logic to handle non-string values
 
@@ -74,10 +81,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
+          fetch-depth: 0
+
       - run: npx @eqworks/commit-watch -b ${{ github.event.pull_request.base.sha }} -h ${{ github.event.pull_request.head.sha }} -v
 ```
 
@@ -213,7 +218,7 @@ e323208 Hub - deprecate `primary` for `primary_key`
 326cc64 Hub - bug fix of ISO date detected as IP, also:
 ```
 
-Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [`release` CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes material.
+Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [`release` CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes or changelog material.
 
 ## On Pull/Merge Requests
 
@@ -261,10 +266,10 @@ Occasionally, a feature or component will mature to the extent that it should be
 
 Rather than copy-pasting code from the parent repository into a new one, it is preferable to retain the relevant commit history.
 
-So, the "split" should be done in such a way that the new repository contains only the desired files, and its commit history contains only the commits that have affected those files.  
+So, the "split" should be done in such a way that the new repository contains only the desired files, and its commit history contains only the commits that have affected those files.
 
 This can be accomplished with either of the following approaches:
-*  `git filter-branch -f --index-filter` as described in [this pull request](https://github.com/EQWorks/lumen-ui/pull/1) works well if you have a specific list of files and directories you would like to clone.   
+*  `git filter-branch -f --index-filter` as described in [this pull request](https://github.com/EQWorks/lumen-ui/pull/1) works well if you have a specific list of files and directories you would like to clone.
 * `git subtree split -P` as described in [this Stack Overflow answer](https://stackoverflow.com/questions/28357056/partial-git-clone-with-relevant-history) works well if the desired files constitute a single subdirectory, as the `-P` option denotes "prefix".
 
 ---
