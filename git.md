@@ -70,7 +70,7 @@ builder - v4 POI parameters
 
 ### Automated Enforcement
 
-If the general commit message (subject line) convention `category[/sub-category] - subject title` is adopted for a given project repository, you can leverage our [`commit-watch` CLI](https://github.com/EQWorks/commit-watch) to perform quick checks. It is especially convenient when integrated into the continuous integration process for pull/merge requests, for example, through GitHub Actions:
+Suppose we adopt the general commit message (subject line) convention `category[/sub-category] - subject title` for a given project repository. In that case, we can leverage our [`commit-watch` CLI](https://github.com/EQWorks/commit-watch) to perform quick checks. It is convenient when integrated into the continuous integration process for pull/merge requests, for example, through GitHub Actions:
 
 ```yml
 jobs:
@@ -144,7 +144,7 @@ You can check the history of the candidate's old head by just doing a `git log H
 
 ### Squash Commits
 
-Squash commits with `git rebase -i` (`i` for interactive), which gives more granular control than `git commit --amend`.
+Squashing commits with `git rebase -i` (`i` for interactive) gives more granular control than `git commit --amend`.
 
 Example:
 1. `git rebase -i HEAD~3` brings 3 commits from and including `HEAD`:
@@ -218,7 +218,7 @@ e323208 Hub - deprecate `primary` for `primary_key`
 326cc64 Hub - bug fix of ISO date detected as IP, also:
 ```
 
-Based on this, combined with a good convention [on commits](#on-commits), we can leverage tools like (our own) [`release` CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes or changelog material.
+From above and combined with good practice [on commits](#on-commits), we can leverage tools like (our own) [`release` CLI](https://github.com/EQWorks/release) to generate nicely arranged release notes or changelog material.
 
 ## On Pull/Merge Requests
 
@@ -226,7 +226,7 @@ Try to maintain a good length and depth of the code changes within each request 
 
 Try to keep a concise summary of changes in the request description. Try to attach screenshots/videos to demonstrate the workflow and before/after differences. Good practices [on commits](#on-commits) help tremendously for summary, so rebase/squash/rephrase commits as needed to keep the commit history clean.
 
-Reference and mark relevant issues as fixed/closed (e.g., `fixes #123`) when applicable.
+When applicable, reference and mark relevant issues as fixed/closed (e.g., `fixes #123`).
 
 Start the request as a draft or mark in the title with a `[WIP]` prefix when it needs more time to complete. Then, mark it ready to review or with a `[G2M]` prefix in the title to signal its readiness.
 
@@ -245,7 +245,7 @@ Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_m
 
 ### Rebase and merge
 
-The relevant commits are all rewritten to be on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). The rebase action can alter the commit history and its timeline. In return, you gain a whole block of commits that represent intended code changes next to each other.
+The relevant commits are all rewritten to be on [top of the `HEAD` of the target branch](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=le). The rebase action can alter the commit history and its timeline. In return, you gain a whole block of commits representing intended code changes next to each other.
 
 ## On Reviewing
 
@@ -262,15 +262,13 @@ Where applicable, go through the changes in deploy preview or your local environ
 Prioritize on reviewing bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that the PR prefix is a well-followed convention in the given repository.
 
 ## Migrating commits to a new repository
-Occasionally, a feature or component will mature to the extent that it should be given its own repository. In this case, "splitting up" the existing repository is desired to extract the matured feature.
+Occasionally, a feature or component will mature to the extent that it should reside in a separate repository. In this case, "splitting up" the existing repository is desired to extract the feature.
 
-Rather than copy-pasting code from the parent repository into a new one, it is preferable to retain the relevant commit history.
+It is preferable to retain the relevant commit history rather than copy-pasting code from the parent repository into a new one.
 
-So, the "split" should be done in such a way that the new repository contains only the desired files, and its commit history contains only the commits that have affected those files.
-
-This can be accomplished with either of the following approaches:
+We should perform the "split" in such a way that the new repository contains only the desired files, and its commit history contains only the commits that have affected those files. To achieve so, we have two options:
 *  `git filter-branch -f --index-filter` as described in [this pull request](https://github.com/EQWorks/lumen-ui/pull/1) works well if you have a specific list of files and directories you would like to clone.
-* `git subtree split -P` as described in [this Stack Overflow answer](https://stackoverflow.com/questions/28357056/partial-git-clone-with-relevant-history) works well if the desired files constitute a single subdirectory, as the `-P` option denotes "prefix".
+* `git subtree split -P` as described in [this Stack Overflow answer](https://stackoverflow.com/questions/28357056/partial-git-clone-with-relevant-history) works well if the desired files constitute a single subdirectory, as the `-P` option denotes "prefix."
 
 ---
 ## General References
