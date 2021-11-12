@@ -1,6 +1,6 @@
 # Decision-making
 
-Decision-making is at the core of our culture. We want to groom our members to be capable of making decisions with collective consensus, based on merits, and remain open-minded to react and adapt to contextual changes to grow a healthy culture and sustain the long-term prosperity of our organization.
+Decision-making is at the core of our culture. We want to groom our members to be capable of making decisions with collective consensus, based on merits, and remain open-minded to respond and adapt to contextual changes to grow a healthy culture and sustain the long-term prosperity of our organization.
 
 To this end, we have established a set of principles that guide our decision-making process, primarily based on the learned lessons from the open-source community.
 
@@ -21,6 +21,6 @@ The decisions, especially about processes and practices, should be objective-ori
 
 By being objective-oriented, we can avoid the tendency to entrap ourselves in the technical details of the process and instead focus on the core problem and the solution, allowing merits-based decision-making to derive natural and logical conclusions.
 
-## Reactive and Open Mindset
+## Responsive and Open Mindset
 
-All decisions should reserve sufficient room for future merit-based changes, which would allow us, as an organization, to be more reactive and adaptable to the changing needs of our members and other internal and external factors. With more sets of eyes on the horizon, we can tap into the collective intelligence to make better short-term adjustments to mitigate risks and improve the long-term prosperity of our organization.
+All decisions should reserve sufficient room for future merit-based changes, which would allow us, as an organization, to be more responsive and adaptable to the changing needs of our members and other internal and external factors. With more sets of eyes on the horizon, we can tap into the collective intelligence to make better short-term adjustments to mitigate risks and improve the long-term prosperity of our organization.
