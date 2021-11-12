@@ -4,7 +4,7 @@ Decision-making is at the core of our culture. We want to groom our members to b
 
 To this end, we have established a set of principles that guide our decision-making process, primarily based on the learned lessons from the open-source community.
 
-## Meritocracy
+## Meritocratic Decision System
 
 All members should be able to opt-in to participate in the decision-making process in a round-table manner and have the decision derived based on merits and collective consensus.
 
