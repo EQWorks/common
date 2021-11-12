@@ -14,7 +14,7 @@ We actively absorb and adopt valuable bits and pieces from [references by other 
 
 [This section](decision-making.md) introduces our principles for decision-making, which serve as the foundation for our work culture.
 
-We encourage decision-making in a round-table manner through grassroots meritocracy.
+We encourage decision-making in a round-table manner through meritocracy.
 
 In turn, this promotes a culture of open-mindedness, helps us adapt to the changing world, and sustains longevity to our members and the organization.
 
