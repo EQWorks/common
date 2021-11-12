@@ -23,4 +23,4 @@ By being objective-oriented, we can avoid the tendency to entrap ourselves in th
 
 ## Responsive and Open Mindset
 
-All decisions should reserve sufficient room for future merit-based changes, which would allow us, as an organization, to be more responsive and adaptable to the changing needs of our members and other internal and external factors. Tap into the collective knowledge and experiences of our team to make better short-term pivots to mitigate risks while pursuing the long-term organizational strategy.
+All decisions should reserve sufficient room for future merit-based changes, which would allow us, as an organization, to be more responsive and adaptable to the changing needs of our members and other internal and external factors. We tap into the collective knowledge and experiences of our team to make better short-term pivots to mitigate risks while pursuing the long-term organizational strategy.
