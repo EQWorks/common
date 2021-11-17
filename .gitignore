@@ -2,3 +2,6 @@
 .sass-cache/
 .bundle/
 _site/
+
+.DS_Store
+images/.DS_Store

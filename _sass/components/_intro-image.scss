@@ -11,7 +11,7 @@
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
-    position: absolute;
+    position: relative;
     bottom: -50px;
     left: -50px;
     width: 700px;
