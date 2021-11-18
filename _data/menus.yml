@@ -1,19 +1,19 @@
 main:
-  - name: "Structure"
-    url: "/structure/"
+  - name: "Culture"
+    url: "/culture/"
     weight: 2
-  - name: "Services"
-    url: "/services/"
+  - name: "Development"
+    url: "/development/"
     weight: 2
-  - name: "Team"
-    url: "/team/"
-    weight: 3
-  - name: "About"
-    url: "/about/"
-    weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
+  - name: "Education"
+    url: "/education/"
+    weight: 2
+  - name: "Open Source"
+    url: "/open-source/"
+    weight: 2
+  - name: "Hiring"
+    url: "/hiring/"
+    weight: 2
 
 footer:
   - name: "Home"
