@@ -5,12 +5,12 @@ main:
   - name: "Development"
     url: "/developments/"
     weight: 2
-  - name: "Education"
-    url: "/education/"
-    weight: 2
-  - name: "Open Source"
-    url: "/open-source/"
-    weight: 2
+  # - name: "Learning"
+  #   url: "/learning/"
+  #   weight: 2
+  # - name: "Open Source"
+  #   url: "/open-source/"
+  #   weight: 2
   - name: "Hiring"
     url: "/hiring/"
     weight: 2

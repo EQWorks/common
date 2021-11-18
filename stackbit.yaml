@@ -84,6 +84,30 @@ models:
       - type: boolean
         name: intro_image_hide_on_mobile
         label: Intro Image Hide On Mobile
+  developments:
+    type: page
+    label: Developments
+    file: developments.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: collection
+        label: Collection
+      - type: image
+        name: intro_image
+        label: Intro Image
+      - type: boolean
+        name: intro_image_absolute
+        label: Intro Image Absolute
+      - type: boolean
+        name: intro_image_hide_on_mobile
+        label: Intro Image Hide On Mobile
   basicpage:
     type: page
     label: Basic Page

@@ -7,24 +7,20 @@
   max-width: none;
 
   padding: 0;
-  margin-bottom: 30px;
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
     position: relative;
-    bottom: -50px;
-    left: -50px;
-    width: 700px;
+    top: 50px;
+    width: 500px;
   }
   @include media-breakpoint-up(lg) {
-    bottom: -60px;
-    left: -60px;
-    width: 800px;
+    top: 60px;
+    width: 600px;
   }
   @include media-breakpoint-up(xl) {
-    bottom: -100px;
-    left: -70px;
-    width: 850px;
+    top: 100px;
+    width: 650px;
   }
 }
 .intro-image-hide-mobile {

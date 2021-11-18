@@ -5,9 +5,6 @@ featured: true
 weight: 1
 ---
 
-
-# git
-
 ## On Commits
 
 Try to keep each commit message concise, relevant, and _release-notes-ready_:

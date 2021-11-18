@@ -21,24 +21,27 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% for culture in site.cultures %}
+      {% assign weighted_cultures = site.cultures | sort: "weight" %}
+      {% for culture in weighted_cultures %}
+      {% if forloop.index < 4 %}
       <div class="col-12 col-md-4 mb-1">
         <div class="culture culture-summary">
           <div class="culture-content">
             <h2 class="culture-title">
               <a href="{{ culture.url | relative_url }}">{{ culture.title }}</a>
             </h2>
-            <p>{{ culture.content | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ culture.content | markdownify | strip_html | truncate: 300 }}</p>
           </div>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
-    <div class="row justify-content-center">
+    <!-- <div class="row justify-content-center">
       <div class="col-auto">
         <a class="button button-primary" href="{{ "cultures" | relative_url }}">View All Posts</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 

@@ -21,12 +21,12 @@ defaults:
       path: ""
       type: "developments"
     values:
-      layout: "development"
+      layout: "page"
   - scope:
       path: ""
-      type: "cultures"
+      type: "section"
     values:
-      layout: "culture"
+      layout: "page"
 
 sass:
   indentWidth: 4

@@ -17,7 +17,7 @@ All members should be able to opt-in to participate in the decision-making proce
 * Established status, positions, on-paper seniority, and other non-merit-relevant criteria should be excluded from the decision-making process.
 * Everyone has the equal opportunity to participate, propose, and defend the merits of their ideas and suggestions.
 * Participation should be voluntary but encouraged based on sufficient transparency of references to the current problems, proposals, and discussions.
-* Participation should be inclusive. Naturally, members who are interested but unable to participate during a given time can still [participate asynchronously](communications/README.md) without being excluded or marginalized. Consequently, the decision-making process should also become more scalable and adaptive to the elastic nature of participation sizes and inter-person dynamics.
+* Participation should be inclusive. Naturally, members who are interested but unable to participate during a given time can still [participate asynchronously](../communication) without being excluded or marginalized. Consequently, the decision-making process should also become more scalable and adaptive to the elastic nature of participation sizes and inter-person dynamics.
 * Members should feel safe expressing their ideas and suggestions and developing and presenting supporting merits without being excluded or marginalized.
 * For sensitive but non-private topics, we can leverage anonymous discussion threads, polls, and surveys.
 
