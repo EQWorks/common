@@ -9,8 +9,7 @@ dataDir: "_data"
 pagesDir: ""
 pageLayoutKey: null
 logicFields:
-  - service.weight
-  - team.weight
+  - culture.weight
 models:
   config:
     type: config
@@ -61,10 +60,10 @@ models:
         name: layout
         default: "home"
         hidden: true
-  services:
+  cultures:
     type: page
-    label: Services
-    file: services.md
+    label: Cultures
+    file: culture.md
     singleInstance: true
     fields:
       - type: string
@@ -79,27 +78,6 @@ models:
       - type: image
         name: intro_image
         label: Intro Image
-      - type: boolean
-        name: intro_image_absolute
-        label: Intro Image Absolute
-      - type: boolean
-        name: intro_image_hide_on_mobile
-        label: Intro Image Hide On Mobile
-  teams:
-    type: page
-    label: Teams
-    file: team.md
-    singleInstance: true
-    fields:
-      - type: string
-        name: title
-        label: Title
-      - type: string
-        name: layout
-        label: Layout
-      - type: string
-        name: permalink
-        label: Permalink
       - type: boolean
         name: intro_image_absolute
         label: Intro Image Absolute
@@ -126,10 +104,10 @@ models:
             value: page
           - label: contact
             value: contact
-  service:
+  culture:
     type: page
-    label: Service
-    folder: _services
+    label: Culture
+    folder: _cultures
     match: "*"
     fields:
       - type: string
@@ -148,12 +126,13 @@ models:
       - type: enum
         name: layout
         options:
-          - label: service
+          - label: culture
             value: service
-  team:
+    development:
     type: page
-    label: Team
-    folder: _team
+    label: Development
+    folder: _developments
+    match: "*"
     fields:
       - type: string
         name: title
@@ -162,27 +141,17 @@ models:
         name: date
         label: Date
       - type: boolean
-        name: draft
-        label: Draft
-      - type: image
-        name: image
-        label: Image
-      - type: string
-        name: jobtitle
-      - type: string
-        name: linkedinurl
+        name: featured
+        label: Featured
       - type: number
         name: weight
         label: Weight
         subtype: int
-      - type: string
+      - type: enum
         name: layout
-        label: Layout
-        hidden: true
-        default: team
-      - type: boolean
-        name: promoted
-        label: Promoted
+        options:
+          - label: development
+            value: development
   contact:
     type: data
     label: Contact

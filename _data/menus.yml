@@ -1,9 +1,9 @@
 main:
   - name: "Culture"
-    url: "/culture/"
+    url: "/cultures/"
     weight: 2
   - name: "Development"
-    url: "/development/"
+    url: "/developments/"
     weight: 2
   - name: "Education"
     url: "/education/"

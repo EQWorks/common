@@ -1,4 +1,10 @@
-# Automation
+---
+title: "Automation"
+date: 2018-11-18T12:33:46+10:00
+featured: true
+weight: 1
+---
+
 
 Over time, we've established various workspace automation to boost our productivity and easily access the information we want to learn.
 

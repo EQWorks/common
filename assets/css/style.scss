@@ -2,18 +2,18 @@
 ---
 
 // Colors
-$primary: #e5261f;
-$primary-dark: #a01b16;
-$secondary: #f88379;
+$primary: #366FE4;
+$primary-dark: #1B3EA4;
+$secondary: #7487AE;
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #fff6f8;
-$steel: #5c5a5a;
+$white-offset: #F2F6FC;
+$steel: #6C6C6C;
 
 // Links
 $link-color: $primary;
 $link-decoration: none;
-$link-hover-color: lighten($primary, 10%);
+$link-hover-color: $primary-dark;
 $link-hover-decoration: underline;
 
 // Fonts
@@ -58,8 +58,9 @@ $sub-footer-text-color: $white;
 
 // Pages
 @import "pages/page-home";
-@import "pages/page-teams";
+// @import "pages/page-teams";
 @import "pages/page-service";
+// @import "pages/page-cultures";
 
 body {
   font-size: 16px;

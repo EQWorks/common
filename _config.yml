@@ -1,32 +1,32 @@
 baseurl: '/'
 permalink: pretty
-title: 'EQ Culture'
+title: 'EQ Common'
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
+  mobile: "images/logo/logo.svg"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.jpeg"
-  desktop_height: "50px"
-  desktop_width: "50px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "30px"
+  desktop_width: "30px"
 
 collections:
-  services:
+  developments: 
     output: true
-  team:
+  cultures:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "services"
+      type: "developments"
     values:
-      layout: "service"
+      layout: "development"
   - scope:
       path: ""
-      type: "team"
+      type: "cultures"
     values:
-      layout: "team"
+      layout: "culture"
 
 sass:
   indentWidth: 4

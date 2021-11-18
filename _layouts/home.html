@@ -21,14 +21,14 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% for service in site.services %}
+      {% for culture in site.cultures %}
       <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+        <div class="culture culture-summary">
+          <div class="culture-content">
+            <h2 class="culture-title">
+              <a href="{{ culture.url | relative_url }}">{{ culture.title }}</a>
             </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ culture.content | markdownify | strip_html | truncate: 100 }}</p>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ bodyClass: "page-home"
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ "cultures" | relative_url }}">View All Posts</a>
       </div>
     </div>
   </div>

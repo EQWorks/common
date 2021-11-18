@@ -1,4 +1,10 @@
-# Decision-making
+---
+title: "Decision Making"
+date: 2018-11-18T12:33:46+10:00
+featured: true
+weight: 1
+---
+
 
 Decision-making is at the core of our culture. We want to groom our members to be capable of making decisions with collective consensus, based on merits, and remain open-minded to respond and adapt to contextual changes to grow a healthy culture and sustain the long-term prosperity of our organization.
 

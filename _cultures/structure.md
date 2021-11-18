@@ -1,14 +1,11 @@
 ---
-title: Structure
-layout: page
-description: Structure
-intro_image: "images/illustrations/reading.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
+title: "Structure"
+date: 2018-11-18T12:33:46+10:00
+featured: true
+weight: 1
 ---
 
 
-# Structure
 
 Having a good structure is essential for our culture. We derive and maintain our structure from the learnings of the open-source community to maximize the odds to [better decisions](decision-making.md), innovation, and sustainability.
 

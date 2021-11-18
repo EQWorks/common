@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyClass: "page-services"
+bodyClass: "page-cultures"
 ---
 
 <div class="intro">
@@ -20,15 +20,15 @@ bodyClass: "page-services"
 
 <div class="container pt-6 pb-6">
   <div class="row">
-    {% assign weighted_services = site.services | sort: "weight" %}
-    {% for service in weighted_services %}
+    {% assign weighted_cultures = site.cultures | sort: "weight" %}
+    {% for culture in weighted_cultures %}
     <div class="col-12 col-md-6 mb-3">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+      <div class="culture culture-summary">
+        <div class="culture-content">
+          <h2 class="culture-title">
+            <a href="{{ culture.url | relative_url }}">{{ culture.title }}</a>
           </h2>
-          <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+          <p>{{ culture.content | markdownify | strip_html | truncate: 200 }}</p>
         </div>
       </div>
     </div>
