@@ -32,7 +32,7 @@ At the same time, adopt more transparent ways to communicate. For example, on Sl
 
 When it is more productive to conduct in a more synchronous manner of communications, such as meetings, be mindful and treat meetings as scarce resources to be treasured as they involve the collective productivity value of all its participants during synchronous communications.
 
-**In principle:** Engage in synchronous communications, such as meetings, when necessary. When needed, consult the [guides on meetings](./meetings.md) to make the most out of them.
+**In principle:** Engage in synchronous communications, such as meetings, when necessary. When needed, consult the [guides on meetings](./meetings) to make the most out of them.
 
 ## Helpful guides
 
@@ -46,4 +46,4 @@ Try to break down tasks with larger scopes into smaller ones. This way, you beco
 
 ### Minimize distractions
 
-It's hard to keep up with all fronts of these communication tools. Instead, take time to learn how to configure them to suit your needs and working style. We have a few [example mechanisms](./slack.md) to help with the overwhelming feeling of notifications and help in persisting and making accessible, valuable company information.
+It's hard to keep up with all fronts of these communication tools. Instead, take time to learn how to configure them to suit your needs and working style. We have a few [example mechanisms](./slack) to help with the overwhelming feeling of notifications and help in persisting and making accessible, valuable company information.

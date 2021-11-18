@@ -1,3 +1,10 @@
+---
+title: "References"
+date: 2018-11-18T12:33:46+10:00
+featured: true
+weight: 1
+---
+
 - [Optimize for Happiness](http://tom.preston-werner.com/2010/10/18/optimize-for-happiness.html) - talk/blog post, by Tom Preston-Werner.
 - [How GitHub Works](https://zachholman.com/posts/how-github-works/) - talk/blog posts, by Zach Holman.
 - [Valve Handbook, 2012 first edition](https://archive.org/details/ValveEmployeeHandbook) - perhaps leaked, with coffee/tea stain, yet with precious insights, probably written collaboratively by Valve employees.
