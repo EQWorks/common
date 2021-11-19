@@ -19,26 +19,25 @@
     line-height: 1.56;
     color: $steel;
   }
+  h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 1rem;;
+  }
   h1 {
-    font-family: $font-family-base;
     font-size: 34px;
     line-height: 1.26;
-    font-weight: normal;
     margin-top: 30px;
     margin-bottom: 20px;
   }
   h2 {
-    font-family: $font-family-base;
     font-size: 26px;
-    font-weight: normal;
     line-height: 1.4;
     margin-top: 30px;
   }
   h3 {
-    font-family: $font-family-base;
     font-size: 20px;
     line-height: 1.4;
-    font-weight: normal;
     margin-top: 30px;
   }
   ul,

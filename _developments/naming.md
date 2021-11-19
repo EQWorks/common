@@ -5,8 +5,6 @@ featured: true
 weight: 1
 ---
 
-# Naming
-
 ## End-to-end Consistency
 
 Try to keep an end-to-end consistency, and preferably, back-to-front consistency, in our naming conventions.

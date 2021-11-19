@@ -3,12 +3,12 @@ permalink: pretty
 title: 'EQ Common'
 
 logo:
-  mobile: "images/logo/logo.svg"
+  mobile: "images/logo/logo.png"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
+  desktop: "images/logo/logo.png"
   desktop_height: "30px"
-  desktop_width: "30px"
+  desktop_width: "auto"
 
 collections:
   developments: 
