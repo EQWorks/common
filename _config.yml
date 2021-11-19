@@ -24,7 +24,7 @@ defaults:
       layout: "page"
   - scope:
       path: ""
-      type: "section"
+      type: "cultures"
     values:
       layout: "page"
 

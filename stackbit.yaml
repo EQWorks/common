@@ -63,7 +63,7 @@ models:
   cultures:
     type: page
     label: Cultures
-    file: culture.md
+    file: cultures.md
     singleInstance: true
     fields:
       - type: string
@@ -151,7 +151,7 @@ models:
         name: layout
         options:
           - label: culture
-            value: service
+            value: culture
     development:
     type: page
     label: Development
