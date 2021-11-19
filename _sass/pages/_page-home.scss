@@ -1,2 +1,14 @@
 .page-home {
+    .intro{
+        p {
+            font-family: 'PT Sans', sans-serif;
+        }
+    }
+    .intro-image {
+        position: relative;
+        left: -2rem;
+    }
+    .button {
+        margin-top: 2rem;
+    }
 }
