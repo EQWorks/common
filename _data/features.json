@@ -1,27 +1,27 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients receive an obligation free consultation.",
+    "title": "Creating Efficiency",
+    "description": "We believe that efficiency allows for productivity.",
     "image": {
-      "url": "images/features/noun_branding_1885335.svg",
+      "url": "images/features/efficiency.svg",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Leveraging Agility",
+    "description": "We persist in leveraging small teams to scale agility.",
     "image": {
-      "url": "images/features/noun_The Process_1885341.svg",
+      "url": "images/features/agility.svg",
       "width": 80,
       "height": 80
     }
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Sustaining Innovation",
+    "description": "We devlop value and usability into our innovations.",
     "image": {
-      "url": "images/features/noun_3d modeling_1885342.svg",
+      "url": "images/features/innovation.svg",
       "width": 80,
       "height": 80
     }
