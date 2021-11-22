@@ -1,1 +1,49 @@
-theme: jekyll-theme-dinky
+baseurl: '/'
+permalink: pretty
+title: 'EQ Engineering'
+
+logo:
+  mobile: "images/logo/logo.png"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.png"
+  desktop_height: "30px"
+  desktop_width: "auto"
+
+collections:
+  developments: 
+    output: true
+  cultures:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "developments"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "cultures"
+    values:
+      layout: "page"
+
+sass:
+  indentWidth: 4
+  style: compressed # possible values: nested expanded compact compressed
+  precision: 10
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md

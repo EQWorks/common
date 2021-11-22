@@ -1,0 +1,24 @@
+main:
+  - name: "Culture"
+    url: "/cultures/"
+    weight: 2
+  - name: "Development"
+    url: "/developments/"
+    weight: 2
+  # - name: "Learning"
+  #   url: "/learning/"
+  #   weight: 2
+  # - name: "Open Source"
+  #   url: "/open-source/"
+  #   weight: 2
+  - name: "Hiring"
+    url: "/hiring/"
+    weight: 2
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  # - name: "Contact"
+  #   url: "/contact/"
+  #   weight: 2

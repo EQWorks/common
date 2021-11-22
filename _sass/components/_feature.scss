@@ -1,0 +1,30 @@
+.feature {
+  height: 100%;
+  border: 1px solid $white-offset;
+  border-radius: 3px;
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  .feature-image {
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .feature-title {
+  }
+  .feature-content {
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+}

@@ -1,4 +1,11 @@
-# Hiring
+---
+title: Hiring
+layout: page
+description: Hiring
+# intro_image: "images/illustrations/working-trio.svg"
+intro_image_absolute: true
+intro_image_hide_on_mobile: true
+---
 
 Hiring is the single most crucial starting point to nurture a healthy culture and productive environment. Going through our hiring process may feel drastically different from other organizations. The difference is because we have been adapting and evolving our approach based on pragmatic needs, technological advancements, and, frankly, how we imagined ourselves in the applicants' shoes.
 

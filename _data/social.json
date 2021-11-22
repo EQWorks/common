@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Github",
+    "link": "https://github.com/EQWorks",
+    "image": "images/social/github.svg"
+  },
+  {
+    "name": "Medium",
+    "link": "https://medium.com/locus-engineering",
+    "image": "images/social/medium.svg"
+  }
+]

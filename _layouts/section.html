@@ -1,0 +1,38 @@
+---
+layout: default
+bodyClass: "page-service"
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 order-2 order-md-1 contents">
+        {{ content }}
+      </div>
+      <!-- {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-4 order-1 order-md-2">
+        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+      </div>
+      {% endif %} -->
+    </div>
+  </div>
+</div>
+<!-- 
+This section can be useful when we have more sub pages under culture
+<div class="container pt-6 pb-6">
+  <div class="row">
+    {% assign weighted_cultures = site.cultures | sort: "weight" %}
+    {% for culture in weighted_cultures %}
+    <div class="col-12 col-md-6 mb-3">
+      <div class="culture culture-summary">
+        <div class="culture-content">
+          <h2 class="culture-title">
+            <a href="{{ culture.url | relative_url }}">{{ culture.title }}</a>
+          </h2>
+          <p>{{ culture.content | markdownify | strip_html | truncate: 200 }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div> -->

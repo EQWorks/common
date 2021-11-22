@@ -1,0 +1,280 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+ssgVersion: "4.1"
+buildCommand: bundle exec jekyll build
+publishDir: "_site"
+staticDir: "assets"
+uploadDir: "images"
+dataDir: "_data"
+pagesDir: ""
+pageLayoutKey: null
+logicFields:
+  - culture.weight
+models:
+  config:
+    type: config
+    label: Config
+    fields:
+      - type: string
+        name: title
+        required: true
+      - type: string
+        name: baseurl
+        hidden: true
+      - type: string
+        name: permalink
+        hidden: true
+  home:
+    type: page
+    label: Homepage
+    file: index.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        required: true
+      - type: string
+        name: description
+      - type: image
+        name: intro_image
+        label: Intro Image
+        description: Image displayed at in the pages intro section
+      - type: boolean
+        name: intro_image_absolute
+        label: Overflow intro image
+        description: Should the image overflow or be contained
+      - type: boolean
+        name: intro_image_hide_on_mobile
+        label: Hide the intro image on mobile
+        description: Hide the intro image on mobile screen sizes
+      - type: boolean
+        name: show_call_box
+        label: Show Call Box
+        description: Show contact info on homepage?
+      - type: datetime
+        name: date
+        label: Date
+      - type: string
+        name: bodyClass
+      - type: string
+        name: layout
+        default: "home"
+        hidden: true
+  cultures:
+    type: page
+    label: Cultures
+    file: cultures.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: collection
+        label: Collection
+      - type: image
+        name: intro_image
+        label: Intro Image
+      - type: boolean
+        name: intro_image_absolute
+        label: Intro Image Absolute
+      - type: boolean
+        name: intro_image_hide_on_mobile
+        label: Intro Image Hide On Mobile
+  developments:
+    type: page
+    label: Developments
+    file: developments.md
+    singleInstance: true
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: collection
+        label: Collection
+      - type: image
+        name: intro_image
+        label: Intro Image
+      - type: boolean
+        name: intro_image_absolute
+        label: Intro Image Absolute
+      - type: boolean
+        name: intro_image_hide_on_mobile
+        label: Intro Image Hide On Mobile
+  basicpage:
+    type: page
+    label: Basic Page
+    match: "*.md"
+    exclude: index.md
+    fields:
+      - type: string
+        name: title
+      - type: datetime
+        name: date
+        label: Date
+      - type: string
+        name: bodyClass
+      - type: enum
+        name: layout
+        options:
+          - label: page
+            value: page
+          - label: contact
+            value: contact
+  culture:
+    type: page
+    label: Culture
+    folder: _cultures
+    match: "*"
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: featured
+        label: Featured
+      - type: number
+        name: weight
+        label: Weight
+        subtype: int
+      - type: enum
+        name: layout
+        options:
+          - label: culture
+            value: culture
+    development:
+    type: page
+    label: Development
+    folder: _developments
+    match: "*"
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: featured
+        label: Featured
+      - type: number
+        name: weight
+        label: Weight
+        subtype: int
+      - type: enum
+        name: layout
+        options:
+          - label: development
+            value: development
+  contact:
+    type: data
+    label: Contact
+    file: contact.yml
+    fields:
+      - type: string
+        name: email
+        label: Email
+      - type: string
+        name: phone
+        label: Phone
+      - type: string
+        name: contact_button_link
+        label: Contact Button Link
+  features:
+    type: data
+    label: Features
+    file: features.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: title
+          label: Title
+        - type: string
+          name: description
+          label: Description
+        - type: image
+          name: image
+          label: Image
+  menus:
+    type: data
+    label: Menus
+    file: menus.yml
+    fields:
+      - type: list
+        name: main
+        label: Main
+        items:
+          type: object
+          fields:
+            - type: string
+              name: name
+              label: Name
+            - type: string
+              name: url
+              label: Url
+            - type: number
+              name: weight
+              label: Weight
+              subtype: int
+      - type: list
+        name: footer
+        label: Footer
+        items:
+          type: object
+          fields:
+            - type: string
+              name: name
+              label: Name
+            - type: string
+              name: url
+              label: Url
+            - type: number
+              name: weight
+              label: Weight
+              subtype: int
+  seo:
+    type: data
+    label: Seo
+    file: seo.yml
+    fields:
+      - type: string
+        name: google_analytics_id
+        label: Google Analytics Id
+      - type: string
+        name: meta_twitter_site
+        label: Meta Twitter Site
+      - type: string
+        name: meta_twitter_creator
+        label: Meta Twitter Creator
+      - type: markdown
+        name: copyright_text
+        label: Copyright Text
+  social:
+    type: data
+    label: Social
+    file: social.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: name
+          label: Name
+        - type: string
+          name: link
+          label: Link
+        - type: image
+          name: image
+          label: Image

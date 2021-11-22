@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  
+<g transform="matrix(3.3333333333333335,0,0,3.3333333333333335,0,0)"><g>
+    <g>
+      <polygon points="15 23.25 9 23.25 9.75 18.75 14.25 18.75 15 23.25" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></polygon>
+      <line x1="6.75" y1="23.25" x2="17.25" y2="23.25" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+      <rect x="0.75" y="0.75" width="22.5" height="18" rx="3" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></rect>
+    </g>
+    <path d="M.75,10.75l4-4a.75.75,0,0,1,1.06,0L7.72,8.72a.75.75,0,0,0,1.06,0l4-4" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></path>
+    <line x1="0.75" y1="14.75" x2="23.25" y2="14.75" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+    <line x1="14.25" y1="8.75" x2="14.25" y2="11.5" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+    <line x1="20.25" y1="8.75" x2="20.25" y2="11.5" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+    <line x1="17.25" y1="6.5" x2="17.25" y2="11.5" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+  </g></g></svg>
