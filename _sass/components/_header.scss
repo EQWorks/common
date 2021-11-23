@@ -1,13 +1,15 @@
 .header {
   font-family: 'PT Sans', sans-serif;
-  color: $primary;
-  background-color: #ffffff;
+  color: $white;
+  background-color: #1B3EA4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 10px rgba(135, 135, 160, 0.2);
   border-bottom: 1px solid $white-offset;
   padding: 10px 0px;
+  a {
+    color: $white !important;
+  }
   .container {
     display: flex;
     justify-content: space-between;

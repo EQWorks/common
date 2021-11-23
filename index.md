@@ -2,7 +2,7 @@
 title: EQ Engineering
 layout: home
 description: Our living handbook is based on common philosophies and practices to create a positive work culture and environment.
-intro_image: "images/illustrations/working-trio.svg"
+intro_image: "images/illustrations/home-illustration.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 show_call_box: true
