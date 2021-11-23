@@ -1,7 +1,7 @@
 [
     {
-      "title": "Create Efficiency",
-      "description": "We believe that efficiency promotes productivity.",
+      "title": "Productivity",
+      "description": "We adapt conventions and automation to promote productivity.",
       "image": {
         "url": "images/features/efficiency.svg",
         "width": 80,
@@ -9,8 +9,8 @@
       }
     },
     {
-      "title": "Leverage Agility ",
-      "description": "We leverage small-size teams to scale agility.",
+      "title": "Agility ",
+      "description": "We leverage a flat and fluid team structure to be agile.",
       "image": {
         "url": "images/features/agility.svg",
         "width": 80,
@@ -18,8 +18,8 @@
       }
     },
     {
-      "title": "Pursue Innovation",
-      "description": "We integrate value and usability into innovations.",
+      "title": "Innovation",
+      "description": "We drive innovation through round table meritocracy.",
       "image": {
         "url": "images/features/innovation.svg",
         "width": 80,

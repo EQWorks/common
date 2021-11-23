@@ -12,15 +12,15 @@
   @include media-breakpoint-up(md) {
     position: relative;
     top: 50px;
-    width: 500px;
+    width: 450px;
   }
   @include media-breakpoint-up(lg) {
     top: 60px;
-    width: 600px;
+    width: 550px;
   }
   @include media-breakpoint-up(xl) {
     top: 100px;
-    width: 650px;
+    width: 600px;
   }
 }
 .intro-image-hide-mobile {
