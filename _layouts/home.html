@@ -23,14 +23,14 @@ bodyClass: "page-home"
     <div class="row justify-content-start">
       {% assign weighted_cultures = site.cultures | sort: "weight" %}
       {% for culture in weighted_cultures %}
-      {% if forloop.index < 4 %}
-      <div class="col-12 col-md-4 mb-1">
+      {% if forloop.index < 5 %}
+      <div class="col-6 mb-5">
         <div class="culture culture-summary">
           <div class="culture-content">
             <h2 class="culture-title">
               <a href="{{ culture.url | relative_url }}">{{ culture.title }}</a>
             </h2>
-            <p>{{ culture.content | markdownify | strip_html | truncate: 240 }}</p>
+            <p>{{ culture.content | markdownify | strip_html | truncate: 200 }}</p>
           </div>
         </div>
       </div>
