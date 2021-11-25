@@ -11,8 +11,20 @@ main:
   # - name: "Open Source"
   #   url: "/open-source/"
   #   weight: 2
+  - name: "Gallery"
+    url: "/gallery/"
+    weight: 2
   - name: "Hiring"
     url: "/hiring/"
+    weight: 2
+  - name: "Careers"
+    url: "https://apply.workable.com/eqworks/"
+    weight: 2
+  - name: "Open Source"
+    url: "https://github.com/EQWorks"
+    weight: 2
+  - name: "Blog"
+    url: "https://medium.com/locus-engineering"
     weight: 2
 
 footer:
