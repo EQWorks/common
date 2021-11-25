@@ -33,7 +33,7 @@ Depending on the role, the work sample becomes an organic filter based on:
 
 * Applicants' interests for the job. As companies automate the job listing to multiple venues, so do the applicants automate the process to mass-submit applications.
 * Applicants' philosophy on whether they prefer this type of "take-home" work sample or in-person whiteboard brainteasers. We don't try to cater to everyone, and we adopted the former.
-* An asynchronous way from the get-go, as the way we encourage our teams [to communicate](communications/README.md).
+* An asynchronous way from the get-go, as the way we encourage our teams [to communicate](_cultures/communication.md).
 
 As a result, we save a considerable amount of time scanning through résumés and other references, thus minimizing the human bias factor. For instance, in one of our roles, the historic hiring pipeline looks like below:
 
@@ -69,5 +69,7 @@ We should actively emulate the scenario where we do work with such candidates an
 
 ## References
 
-* ["How to get hired by our team"](https://medium.com/locus-engineering/how-to-get-hired-by-our-team-1b72b6062463) from our Engineering blog
+* From our [Engineering blog](https://medium.com/locus-engineering)
+  * [How to get hired by our team](https://medium.com/locus-engineering/how-to-get-hired-by-our-team-1b72b6062463)
+  * [Our Internship Program](https://medium.com/locus-engineering/our-internship-program-85cb89e90357)
 * The infamous ["Handbook for New Employees" from Valve](https://archive.org/details/ValveEmployeeHandbook) (first edition)
