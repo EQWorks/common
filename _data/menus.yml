@@ -14,9 +14,6 @@ main:
   - name: "Gallery"
     url: "/gallery/"
     weight: 2
-  - name: "Hiring"
-    url: "/hiring/"
-    weight: 2
   - name: "Careers"
     url: "https://apply.workable.com/eqworks/"
     weight: 2

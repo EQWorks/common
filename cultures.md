@@ -32,3 +32,7 @@ We also have guides on [Slack](communication/slack), [GitHub projects](communica
 ### [🤖 &nbsp;Automation](automation)
 
 The various automation tools and workflows we build to sustain and synergize with our conventions and principles.
+
+### [💼 &nbsp;Hiring](hiring)
+
+Hiring is the single most crucial starting point to nurture a healthy culture and productive environment. Going through our hiring process may feel drastically different from other organizations.
