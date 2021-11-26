@@ -21,7 +21,7 @@ main:
     url: "https://github.com/EQWorks"
     weight: 2
   - name: "Blog"
-    url: "https://medium.com/locus-engineering"
+    url: "https://medium.com/eq-engineering"
     weight: 2
 
 footer:

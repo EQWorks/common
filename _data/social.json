@@ -6,7 +6,12 @@
   },
   {
     "name": "Medium",
-    "link": "https://medium.com/locus-engineering",
+    "link": "https://medium.com/eq-engineering",
     "image": "images/social/medium.svg"
+  },
+  {
+    "name": "EQ Works",
+    "link": "https://www.eqworks.com",
+    "image": "images/social/eq.png"
   }
 ]

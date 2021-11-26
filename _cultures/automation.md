@@ -23,7 +23,7 @@ Our [`updates`](https://github.com/EQWorks/updates) project obtains activities f
 
 Based on our [git conventions](git.md), we have developed [a CLI](https://github.com/EQWorks/release) (command-line interface) and an NLP (natural-language-processing) model to formulate release notes based on commit messages automatically.
 
-You can read more about this in our blog post, ["Road to Automation: Release Notes."](https://medium.com/locus-engineering/road-to-automation-release-notes-d1c49cc97d9)
+You can read more about this in our blog post, ["Road to Automation: Release Notes."](https://medium.com/eq-engineering/road-to-automation-release-notes-d1c49cc97d9)
 
 ## [commit-watch](https://github.com/EQWorks/commit-watch)
 

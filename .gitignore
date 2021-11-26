@@ -2,6 +2,7 @@
 .sass-cache/
 .bundle/
 _site/
+vendor/
 
 .DS_Store
 images/.DS_Store
