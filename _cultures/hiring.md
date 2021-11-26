@@ -66,5 +66,5 @@ We should actively emulate the scenario where we do work with such candidates an
 
 ## References
 
-* ["How to get hired by our team"](https://medium.com/locus-engineering/how-to-get-hired-by-our-team-1b72b6062463) from our Engineering blog
+* ["How to get hired by our team"](https://medium.com/eq-engineering/how-to-get-hired-by-our-team-1b72b6062463) from our Engineering blog
 * The infamous ["Handbook for New Employees" from Valve](https://archive.org/details/ValveEmployeeHandbook) (first edition)
