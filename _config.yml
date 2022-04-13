@@ -3,10 +3,10 @@ permalink: pretty
 title: 'EQ Engineering'
 
 logo:
-  mobile: "images/logo/logo.png"
+  mobile: "images/logo/logo_easter.png"
   mobile_height: "32px"
   mobile_width: "32px"
-  desktop: "images/logo/logo.png"
+  desktop: "images/logo/logo_easter.png"
   desktop_height: "30px"
   desktop_width: "auto"
 
