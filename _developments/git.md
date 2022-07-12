@@ -8,11 +8,13 @@ weight: 1
 ## On Commits
 
 Try to keep each commit message concise, relevant, and _release-notes-ready_:
+
 - Leverage the **first line** as the **subject**. Try to confine it within 50 characters long. Aim to make this part usable for release notes.
 - Specify if the commit contains breaking changes.
 - Optionally put **lengthier details** in the message **body**, in the form of bullet points or paragraphs. They should contain all technical information that is valuable for fellow contributors, reviewers, and your future selves.
 
 Try to keep each commit's code changes as isolated from each other as possible:
+
 - Scope closely coupled code changes within a single commit.
 - Exceptional cases such as structural refactor (without feature changes) should live in standalone commits and be marked accordingly in the commit messages instead of mixing with feature alteration code changes.
 - On the other hand, when non-impacting minor code changes happen (such as `console.log`, `debug`, etc.), you can:
@@ -122,6 +124,7 @@ $ git rebase --continue  # as before
 ```
 
 ### Common Pitfall - Inclusion of unwanted commits from a rebase
+
 If you included commits you didn't want to, this [Q&A on Stackoverflow](https://stackoverflow.com/questions/134882/undoing-a-git-rebase) would provide a solution. Example:
 
 The easiest way would be to find the head commit of the branch as it was immediately before the rebase started in the reflog:
@@ -137,6 +140,7 @@ Suppose the old commit was `HEAD@{5}` in the ref log:
 ```
 git reset --hard HEAD@{5}
 ```
+
 In Windows, you may need to quote the reference:
 
 ```
@@ -145,13 +149,12 @@ git reset --hard "HEAD@{5}"
 
 You can check the history of the candidate's old head by just doing a `git log HEAD@{5}` (Windows: `git log "HEAD@{5}"`).
 
-
-
 ### Squash Commits
 
 Squashing commits with `git rebase -i` (`i` for interactive) gives more granular control than `git commit --amend`.
 
 Example:
+
 1. `git rebase -i HEAD~3` brings 3 commits from and including `HEAD`:
 
 ```bash
@@ -160,7 +163,9 @@ pick 6df9b94 has_aoi - add a query to check if there are associated POIs in the 
 pick 6d9075c mend
 pick 95e9ccd report_vwi - add has_aoi query logic to VWI reports
 ```
+
 Followed by a series of commands to edit the commits:
+
 ```bash
 # Commands:
 # p, pick = use commit
@@ -171,9 +176,11 @@ Followed by a series of commands to edit the commits:
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 ```
+
 2. edit and replace the keyword `pick` with `squash` (or `s`):
 
 Upon saving, git editor will prompt with the view to edit the commit messages:
+
 ```bash
 # This is a combination of 2 commits.
 # This is the 1st commit message:
@@ -185,16 +192,19 @@ has_aoi - add a query to check if there are associated POIs in the AOI report ta
 
 mend
 ```
+
 Save and exit to complete the squashing.
 
 3. `git push --force`:
 
 Run `git status` to confirm your changes:
+
 ```bash
 On branch report_wi/hasAoiFlag
 Your branch and 'origin/report_wi/hasAoiFlag' have diverged,
 and have 2 and 3 different commits each, respectively.
 ```
+
 Run `git push --force` to update your branch.
 
 ## On Tags
@@ -243,7 +253,6 @@ Merge with [`--no-ff` option](https://git-scm.com/docs/git-merge#_fast_forward_m
 
 ![merge commit](https://user-images.githubusercontent.com/2837532/121074564-09531000-c7a2-11eb-8a56-39e238ab4b1c.png)
 
-
 ### Squash and merge
 
 **TRY NOT TO SQUASH MERGE.**
@@ -267,16 +276,44 @@ Where applicable, go through the changes in deploy preview or your local environ
 Prioritize on reviewing bug fixes, then the new features. Use `G2M` as a search filter to minimize noise -- provided that the PR prefix is a well-followed convention in the given repository.
 
 ## Migrating commits to a new repository
+
 Occasionally, a feature or component will mature to the extent that it should reside in a separate repository. In this case, "splitting up" the existing repository is desired to extract the feature.
 
 It is preferable to retain the relevant commit history rather than copy-pasting code from the parent repository into a new one.
 
 We should perform the "split" in such a way that the new repository contains only the desired files, and its commit history contains only the commits that have affected those files. To achieve so, we have two options:
-*  `git filter-branch -f --index-filter` as described in [this pull request](https://github.com/EQWorks/lumen-ui/pull/1) works well if you have a specific list of files and directories you would like to clone.
-* `git subtree split -P` as described in [this Stack Overflow answer](https://stackoverflow.com/questions/28357056/partial-git-clone-with-relevant-history) works well if the desired files constitute a single subdirectory, as the `-P` option denotes "prefix."
+
+- `git filter-branch -f --index-filter` as described in [this pull request](https://github.com/EQWorks/lumen-ui/pull/1) works well if you have a specific list of files and directories you would like to clone.
+- `git subtree split -P` as described in [this Stack Overflow answer](https://stackoverflow.com/questions/28357056/partial-git-clone-with-relevant-history) works well if the desired files constitute a single subdirectory, as the `-P` option denotes "prefix."
+
+## Scrubbing Secrets from Commit History
+
+If you've done an oopsie, and accidentally included secrets of one sort or another within your commit history, don't panic! Well, panic a little, but there's a rather simple solution.
+
+BFG is a java jar that can perform similar functions to git-filter-branch, but much quicker, and more intuitively.
+All you need to do is download the jar file from here and follow the instructions:
+https://rtyley.github.io/bfg-repo-cleaner/
+
+For example, if you've included a secret key by accident, you can rectify this by:
+
+1. Clone a fresh copy of the repo with (don't forget to use mirror - this creates a full copy of the Git database of your repository)
+   `git clone --mirror https://example.com/some-big-repo.git`
+2. Create a .txt file with the words you'd like to replace
+3. Run the BFG jar with the following instructions:
+   `java -jar bfg.jar --replace-text badwords.txt some-big-repo.git`
+4. This updates your previous commits by taking the offending word, and replacing it with a **REPLACED** string (and produces a report you can check to make sure everything was replaced correctly)
+5. Now cd into your .git repo
+6. And run:
+   `git reflog expire --expire=now --all && git gc --prune=now --aggressive`
+7. If everything looks good, you can run:
+   `git push --force`
+
+That's it! All the bad words are replaced.
 
 ---
+
 ## General References
+
 - [GitHub article on merge methods](https://help.github.com/en/articles/about-merge-methods-on-github)
 - [Git documentation on merge](https://git-scm.com/docs/git-merge)
 - [Atlassian article on Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
